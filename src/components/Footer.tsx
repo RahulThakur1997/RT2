@@ -193,12 +193,9 @@ export const Footer: React.FC<FooterProps> = ({
                             window.location.pathname = '/new-roof-installations';
                           }
                         }}
-                        className="hover:text-white hover:underline cursor-pointer transition-colors text-left flex items-center gap-1.5 group"
+                        className="hover:text-white hover:underline cursor-pointer transition-colors text-left"
                       >
-                        <span>{service}</span>
-                        <span className="text-[10px] bg-[#ac0e13] text-white px-1.5 py-0.2 rounded font-heading font-semibold">
-                          Service Page
-                        </span>
+                        {service}
                       </button>
                     ) : (
                       <button
