@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Keystone Roofing \u0026 Building Ltd",
+  "description": "Keystone Roofing \u0026 Building Ltd provides professional roofing, roof repairs, flat roofing, guttering and building services in Finchley, London and surrounding areas. Call 07935 250505 or Freephone 0800 051 8429.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
