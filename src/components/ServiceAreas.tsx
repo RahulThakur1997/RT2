@@ -7,58 +7,58 @@ interface ServiceAreasProps {
   onOpenQuoteModal: (initialService?: string, initialPostcode?: string) => void;
 }
 
-// Service locations organized into 3 neat columns as specified
+// Service locations organized into 3 neat columns for Birmingham & West Midlands
 const SERVICE_COLUMNS = [
   {
     id: 'col-1',
-    title: 'Reading & Greater Area',
+    title: 'Birmingham & Greater Area',
     locations: [
-      'Reading',
-      'Arborfield',
-      'Wokingham',
-      'Bracknell',
-      'Crowthorne',
-      'Earley',
-      'Woodley',
-      'Winnersh',
-      'Shinfield',
-      'Lower Earley',
-      'Tilehurst',
-      'Pangbourne'
+      'Birmingham',
+      'Sutton Coldfield',
+      'Solihull',
+      'Erdington',
+      'Edgbaston',
+      'Harborne',
+      'Moseley',
+      'Kings Heath',
+      'Bournville',
+      'Selly Oak',
+      'Perry Barr',
+      'Great Barr'
     ]
   },
   {
     id: 'col-2',
-    title: 'Berkshire & Thames Valley',
+    title: 'West Midlands & Black Country',
     locations: [
-      'Berkshire',
-      'Henley-on-Thames',
-      'Maidenhead',
-      'Twyford',
-      'Sonning',
-      'Wargrave',
-      'Mortimer',
-      'Theale',
-      'Burghfield',
-      'Yateley',
-      'Sandhurst',
-      'Fleet'
+      'West Midlands',
+      'Wolverhampton',
+      'Dudley',
+      'Walsall',
+      'West Bromwich',
+      'Stourbridge',
+      'Halesowen',
+      'Oldbury',
+      'Smethwick',
+      'Tipton',
+      'Willenhall',
+      'Wednesbury'
     ]
   },
   {
     id: 'col-3',
     title: 'Surrounding Towns & Borders',
     locations: [
-      'Basingstoke',
-      'Camberley',
-      'Farnborough',
-      'Aldershot',
-      'Hook',
-      'Newbury',
-      'Thatcham',
-      'Slough',
-      'Windsor',
-      'Ascot',
+      'Tamworth',
+      'Lichfield',
+      'Bromsgrove',
+      'Redditch',
+      'Kidderminster',
+      'Coleshill',
+      'Kenilworth',
+      'Coventry',
+      'Royal Leamington Spa',
+      'Warwick',
       'And surrounding areas'
     ]
   }
@@ -73,13 +73,13 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
     if (!postcodeInput.trim()) return;
 
     const query = postcodeInput.trim().toUpperCase();
-    if (query.startsWith('RG') || query.includes('READING') || query.length >= 2) {
+    if (query.startsWith('B') || query.startsWith('WS') || query.startsWith('WV') || query.startsWith('DY') || query.includes('BIRMINGHAM') || query.length >= 2) {
       setCoverageFeedback(
-        `✓ Active coverage: Keystone teams cover ${query} with fast emergency response & scheduled visits.`
+        `✓ Active coverage: A T Roofing teams cover ${query} with fast emergency response & scheduled visits.`
       );
     } else {
       setCoverageFeedback(
-        `We cover Berkshire and bordering towns. Contact us to confirm rapid scheduling for ${query}.`
+        `We cover Birmingham, West Midlands and bordering towns. Contact us to confirm rapid scheduling for ${query}.`
       );
     }
   };
@@ -103,9 +103,9 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
       <div className="w-full bg-[#F5F7FA] pt-10 sm:pt-14 lg:pt-16 pb-24 sm:pb-32 lg:pb-40 border-t border-gray-200/60">
         <div className="max-w-[1280px] mx-auto px-6 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#ac0e13]" />
-            <span className="font-heading font-bold text-xs uppercase tracking-widest text-[#242F6B]">
-              KEYSTONE ROOFING &amp; BUILDING LTD • LOCAL SERVICE COVERAGE
+            <span className="w-2 h-2 rounded-full bg-[#C80103]" />
+            <span className="font-heading font-bold text-xs uppercase tracking-widest text-[#040205]">
+              A T ROOFING BIRMINGHAM • LOCAL SERVICE COVERAGE
             </span>
           </div>
         </div>
@@ -113,10 +113,10 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
 
       {/* ====================================================================
           MAIN SECTION
-          Primary Brand Navy: #242F6B
+          Primary Brand Background: #040205
           Contains subtle dark blueprint/map-line pattern on the left side
           ==================================================================== */}
-      <div className="w-full bg-[#242F6B] text-white pt-6 sm:pt-10 pb-24 sm:pb-32 lg:pb-36 relative">
+      <div className="w-full bg-[#040205] text-white pt-6 sm:pt-10 pb-24 sm:pb-32 lg:pb-36 relative">
         {/* Subtle dark blueprint / map-line pattern (concentrated on the left, low contrast) */}
         <div
           className="absolute inset-0 pointer-events-none opacity-[0.05]"
@@ -128,19 +128,19 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               {/* Technical blueprint grid */}
-              <pattern id="keystone-blueprint-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+              <pattern id="atroofing-blueprint-grid" width="48" height="48" patternUnits="userSpaceOnUse">
                 <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#FFFFFF" strokeWidth="0.75" strokeDasharray="3 3" />
                 <path d="M 24 24 m -2, 0 a 2,2 0 1,0 4,0 a 2,2 0 1,0 -4,0" fill="#FFFFFF" opacity="0.4" />
               </pattern>
               {/* Abstract topographic contour arcs */}
-              <pattern id="keystone-map-contours" width="240" height="240" patternUnits="userSpaceOnUse">
+              <pattern id="atroofing-map-contours" width="240" height="240" patternUnits="userSpaceOnUse">
                 <circle cx="120" cy="120" r="80" fill="none" stroke="#93C5FD" strokeWidth="1" strokeDasharray="8 6" />
                 <circle cx="120" cy="120" r="115" fill="none" stroke="#93C5FD" strokeWidth="0.75" />
                 <path d="M 0 120 Q 60 90 120 120 T 240 120" fill="none" stroke="#93C5FD" strokeWidth="1" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#keystone-blueprint-grid)" />
-            <rect width="100%" height="100%" fill="url(#keystone-map-contours)" />
+            <rect width="100%" height="100%" fill="url(#atroofing-blueprint-grid)" />
+            <rect width="100%" height="100%" fill="url(#atroofing-map-contours)" />
           </svg>
         </div>
 
@@ -182,10 +182,10 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                   className="absolute bottom-0 left-10 right-10 h-3 bg-black/85 blur-sm rounded-full pointer-events-none"
                 />
 
-                {/* Transparent Truck Cutout Image with Official Keystone Logo */}
+                {/* Commercial vehicle cutout */}
                 <img
                   src="/images/keystone-truck-transparent.png?v=clean3"
-                  alt="Keystone Roofing & Building Ltd commercial work van"
+                  alt="A T Roofing Birmingham commercial work vehicle"
                   className="w-full h-auto object-contain relative z-10 filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
                   referrerPolicy="no-referrer"
                 />
@@ -196,21 +196,21 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ delay: 0.35, duration: 0.45, ease: 'easeOut' }}
-                  className="absolute -bottom-2 right-4 z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#151D45]/95 backdrop-blur-xs border border-white/20 text-white text-[10px] sm:text-[11px] font-heading font-bold uppercase tracking-wider shadow-lg"
+                  className="absolute -bottom-2 right-4 z-20 flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#040205]/95 backdrop-blur-xs border border-white/20 text-white text-[10px] sm:text-[11px] font-heading font-bold uppercase tracking-wider shadow-lg"
                 >
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Keystone Mobile Fleet • Reading</span>
+                  <span>A T Roofing Mobile Fleet • Birmingham</span>
                 </motion.div>
               </motion.div>
 
               {/* Large, visually dominant Heading with generous breathing room */}
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[38px] xl:text-[42px] font-extrabold tracking-tight leading-[1.18] text-white mb-5 sm:mb-6">
-                Looking for a trusted roofer near you? We cover Reading, Berkshire &amp; surrounding areas.
+                Looking for a trusted roofer near you? We cover Birmingham, West Midlands &amp; surrounding areas.
               </h2>
 
               {/* Supporting Paragraph */}
               <p className="text-sm sm:text-base md:text-lg text-gray-200 font-normal leading-relaxed mb-8 sm:mb-10 max-w-xl">
-                Keystone Roofing and Building Limited provides professional roofing and building services across Reading, Berkshire and the surrounding areas. Whether you need a fast roof repair, a complete roof replacement or professional building work, our experienced team can arrange a convenient time to visit your property.
+                A T Roofing Birmingham provides professional roofing and building services across Birmingham, West Midlands and the surrounding areas. Whether you need a fast roof repair, a complete roof replacement or professional building work, our experienced team can arrange a convenient time to visit your property.
               </p>
 
               {/* Premium "Contact Us" CTA Button + Direct Phone with clean spacing */}
@@ -219,7 +219,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                   id="service-areas-contact-btn"
                   type="button"
                   onClick={handleContactClick}
-                  className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-lg bg-white text-[#242F6B] hover:bg-[#ac0e13] hover:text-white font-heading font-bold text-sm tracking-wider uppercase shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-lg bg-white text-[#040205] hover:bg-[#C80103] hover:text-white font-heading font-bold text-sm tracking-wider uppercase shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>Contact Us</span>
                   <ArrowRight className="w-4 h-4" />
@@ -230,7 +230,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                   href={BUSINESS_INFO.telLink}
                   className="inline-flex items-center justify-center gap-2 text-sm font-heading font-semibold text-gray-200 hover:text-white transition-colors py-2 px-3"
                 >
-                  <Phone className="w-4 h-4 text-[#ac0e13]" />
+                  <Phone className="w-4 h-4 text-[#C80103]" />
                   <span>Call {BUSINESS_INFO.phone}</span>
                 </a>
               </div>
@@ -244,7 +244,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                       type="text"
                       value={postcodeInput}
                       onChange={(e) => setPostcodeInput(e.target.value)}
-                      placeholder="Check your postcode (e.g. RG1 4PS)..."
+                      placeholder="Check your postcode (e.g. B44 8DX)..."
                       className="w-full px-4 py-2.5 text-xs sm:text-sm bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/40 uppercase font-medium"
                     />
                     <Search className="w-4 h-4 text-gray-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
@@ -258,7 +258,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                 </form>
 
                 {coverageFeedback && (
-                  <p className="mt-3 text-xs text-blue-200 leading-snug animate-in fade-in duration-200">
+                  <p className="mt-3 text-xs text-red-200 leading-snug animate-in fade-in duration-200">
                     {coverageFeedback}
                   </p>
                 )}
@@ -278,8 +278,8 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
                         key={location}
                         className="flex items-center gap-3 py-1 group/loc"
                       >
-                        {/* Circular Checkmark Icon in subtle light blue/white tone */}
-                        <span className="w-5 h-5 rounded-full bg-[#1C2555] border border-[#7BA4FF]/35 flex items-center justify-center shrink-0 text-[#BFDBFE] group-hover/loc:border-[#7BA4FF]/70 group-hover/loc:text-white transition-colors shadow-xs">
+                        {/* Circular Checkmark Icon */}
+                        <span className="w-5 h-5 rounded-full bg-white/10 border border-white/20 flex items-center justify-center shrink-0 text-[#C80103] group-hover/loc:border-[#C80103] group-hover/loc:text-[#C80103] transition-colors shadow-xs">
                           <Check className="w-3 h-3 stroke-[3]" />
                         </span>
 
@@ -295,7 +295,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
 
               {/* Discreet assurance footnote */}
               <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-gray-300">
-                <span>Free roof surveys &amp; inspections throughout Berkshire &amp; Thames Valley</span>
+                <span>Free roof surveys &amp; inspections throughout Birmingham &amp; West Midlands</span>
                 <span className="text-gray-400">Response within 24 hours</span>
               </div>
             </div>

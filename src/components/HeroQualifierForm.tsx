@@ -191,7 +191,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
 
     // Log structured lead in development console for verification
     if (process.env.NODE_ENV !== 'production') {
-      console.info('[Keystone Lead Submitted]:', leadData);
+      console.info('[A T Roofing Lead Submitted]:', leadData);
     }
 
     if (onSuccess) {
@@ -312,7 +312,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
   };
 
   const highlightClasses = isHighlighted
-    ? 'ring-4 ring-[#ac0e13] ring-offset-4 ring-offset-[#0F1638] shadow-[0_0_60px_rgba(220,38,38,0.65),0_25px_50px_-12px_rgba(0,0,0,0.85)] scale-[1.015] -translate-y-1 border-[#ac0e13]'
+    ? 'ring-4 ring-[#C80103] ring-offset-4 ring-offset-[#040205] shadow-[0_0_60px_rgba(200,1,3,0.65),0_25px_50px_-12px_rgba(0,0,0,0.85)] scale-[1.015] -translate-y-1 border-[#C80103]'
     : 'border-gray-100 shadow-2xl';
 
   return (
@@ -327,7 +327,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
       {isHighlighted && !submittedLead && (
         <div
           aria-live="polite"
-          className="absolute -top-4 sm:-top-5 left-1/2 -translate-x-1/2 z-30 bg-[#ac0e13] text-white px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs font-heading font-extrabold uppercase tracking-wider shadow-2xl flex items-center gap-2 whitespace-nowrap animate-bounce border-2 border-white pointer-events-none"
+          className="absolute -top-4 sm:-top-5 left-1/2 -translate-x-1/2 z-30 bg-[#C80103] text-white px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs font-heading font-extrabold uppercase tracking-wider shadow-2xl flex items-center gap-2 whitespace-nowrap animate-bounce border-2 border-white pointer-events-none"
         >
           <span className="w-2.5 h-2.5 rounded-full bg-white animate-ping" />
           <span>Fill in your details here ↓</span>
@@ -342,19 +342,19 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10" />
           </div>
 
-          <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#242F6B] mb-2 tracking-tight">
+          <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#040205] mb-2 tracking-tight">
             Thanks, {submittedLead.name.split(' ')[0]}!
           </h3>
 
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-md mx-auto mb-6">
-            We've received your roofing enquiry. A member of the Keystone team will be in touch shortly.
+            We've received your roofing enquiry. A member of the A T Roofing team will be in touch shortly.
           </p>
 
           {/* Structured Summary Box */}
           <div className="bg-[#F8FAFC] border border-gray-200 rounded-lg p-4 sm:p-5 text-left mb-6 space-y-2.5">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between border-b border-gray-200/80 pb-2">
               <span className="text-xs font-bold uppercase tracking-wider text-gray-500">Service:</span>
-              <span className="text-sm font-heading font-bold text-[#242F6B]">
+              <span className="text-sm font-heading font-bold text-[#040205]">
                 {getServiceDisplayTitle(submittedLead.service)}
               </span>
             </div>
@@ -382,10 +382,10 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             <a
               id={`${idPrefix}success-call-btn`}
               href={BUSINESS_INFO.telLink}
-              className="inline-flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="inline-flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
             >
               <Phone className="w-4 h-4 text-white" />
-              <span>CALL KEYSTONE ({BUSINESS_INFO.phone})</span>
+              <span>CALL A T ROOFING ({BUSINESS_INFO.phone})</span>
             </a>
           </div>
         </div>
@@ -394,8 +394,8 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
         <div>
           {/* Card Top Branding & Red Accent */}
           <div className="mb-4">
-            <div className="w-10 h-1 bg-[#ac0e13] rounded-full mb-3" />
-            <h2 className="font-heading text-xl sm:text-2xl md:text-[26px] font-extrabold text-[#242F6B] tracking-tight leading-snug">
+            <div className="w-10 h-1 bg-[#C80103] rounded-full mb-3" />
+            <h2 className="font-heading text-xl sm:text-2xl md:text-[26px] font-extrabold text-[#040205] tracking-tight leading-snug">
               Get Your Free Quote
             </h2>
             <p className="text-xs sm:text-sm text-gray-600 mt-1">
@@ -407,11 +407,11 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
           {isHighlighted && (
             <div
               role="status"
-              className="mb-4 p-2.5 sm:p-3 rounded-lg bg-red-50/95 border border-red-200 text-[#ac0e13] text-xs sm:text-sm font-heading font-bold flex items-center gap-2.5 animate-pulse shadow-xs"
+              className="mb-4 p-2.5 sm:p-3 rounded-lg bg-red-50/95 border border-red-200 text-[#C80103] text-xs sm:text-sm font-heading font-bold flex items-center gap-2.5 animate-pulse shadow-xs"
             >
               <span className="flex h-2.5 w-2.5 relative shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ac0e13]"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#C80103]"></span>
               </span>
               <span>Start here: Choose your service or details below for your free quote</span>
             </div>
@@ -421,13 +421,13 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
           <div className="mb-5 pb-3 border-b border-gray-100">
             <div className="flex items-center justify-between text-[11px] sm:text-xs font-heading font-bold uppercase tracking-wider mb-2">
               <span className="text-gray-500">YOUR ROOFING ENQUIRY</span>
-              <span className="text-[#242F6B] font-extrabold">STEP {step} OF 4</span>
+              <span className="text-[#040205] font-extrabold">STEP {step} OF 4</span>
             </div>
 
-            {/* Custom Progress Bar with Track #242F6B / Fill #ac0e13 */}
-            <div className="w-full h-2 bg-[#242F6B]/15 rounded-full overflow-hidden p-0.5">
+            {/* Custom Progress Bar with Track #040205 / Fill #C80103 */}
+            <div className="w-full h-2 bg-[#040205]/15 rounded-full overflow-hidden p-0.5">
               <div
-                className="h-full bg-[#ac0e13] rounded-full transition-all duration-300 ease-out"
+                className="h-full bg-[#C80103] rounded-full transition-all duration-300 ease-out"
                 style={{ width: `${(step / 4) * 100}%` }}
               />
             </div>
@@ -439,7 +439,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
               role="alert"
               className="mb-4 p-3 rounded-md bg-red-50 border border-red-200 text-xs font-medium text-red-700 flex items-center gap-2 animate-in fade-in duration-200"
             >
-              <AlertCircle className="w-4 h-4 text-[#ac0e13] shrink-0" />
+              <AlertCircle className="w-4 h-4 text-[#C80103] shrink-0" />
               <span>{errorMessage}</span>
             </div>
           )}
@@ -454,7 +454,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             {step === 1 && (
               <div>
                 <div className="mb-3">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#242F6B]">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#040205]">
                     What do you need help with?
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
@@ -479,20 +479,20 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                         }}
                         className={`p-2.5 sm:p-3 rounded-lg text-left border transition-all duration-150 relative cursor-pointer min-h-[64px] flex flex-col justify-between ${
                           isSelected
-                            ? 'border-[#ac0e13] bg-[#FEF2F2] ring-1 ring-[#ac0e13] shadow-xs'
+                            ? 'border-[#C80103] bg-[#FEF2F2] ring-1 ring-[#C80103] shadow-xs'
                             : isHighlighted
-                            ? 'border-red-300 bg-red-50/30 hover:border-[#ac0e13] hover:bg-white'
+                            ? 'border-red-300 bg-red-50/30 hover:border-[#C80103] hover:bg-white'
                             : 'border-[#D0D5DD] bg-white hover:border-gray-400 hover:bg-gray-50/70'
                         }`}
                       >
                         <div className="flex items-start justify-between gap-1 mb-1">
                           <IconComponent
                             className={`w-4 h-4 shrink-0 transition-colors ${
-                              isSelected ? 'text-[#ac0e13]' : 'text-gray-500'
+                              isSelected ? 'text-[#C80103]' : 'text-gray-500'
                             }`}
                           />
                           {isSelected && (
-                            <span className="w-4 h-4 rounded-full bg-[#ac0e13] text-white flex items-center justify-center shrink-0">
+                            <span className="w-4 h-4 rounded-full bg-[#C80103] text-white flex items-center justify-center shrink-0">
                               <Check className="w-2.5 h-2.5 stroke-[3]" />
                             </span>
                           )}
@@ -501,7 +501,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                         <div>
                           <p
                             className={`text-xs sm:text-[13px] font-heading leading-tight ${
-                              isSelected ? 'font-bold text-[#ac0e13]' : 'font-semibold text-gray-900'
+                              isSelected ? 'font-bold text-[#C80103]' : 'font-semibold text-gray-900'
                             }`}
                           >
                             {item.title}
@@ -520,7 +520,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                     id={`${idPrefix}step1-continue`}
                     type="button"
                     onClick={handleStep1Continue}
-                    className="w-full py-3.5 px-6 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
+                    className="w-full py-3.5 px-6 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
                   >
                     <span>CONTINUE</span>
                     <ArrowRight className="w-4 h-4" />
@@ -533,7 +533,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             {step === 2 && (
               <div>
                 <div className="mb-4">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#242F6B]">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#040205]">
                     Where is the property?
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
@@ -546,7 +546,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                     htmlFor={`${idPrefix}postcode-input`}
                     className="block text-xs font-heading font-bold uppercase tracking-wider text-gray-700"
                   >
-                    POSTCODE / AREA <span className="text-[#ac0e13]">*</span>
+                    POSTCODE / AREA <span className="text-[#C80103]">*</span>
                   </label>
                   <input
                     ref={postcodeInputRef}
@@ -557,8 +557,8 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       setAreaPostcode(e.target.value.toUpperCase());
                       setErrorMessage('');
                     }}
-                    placeholder="e.g. N3 2DN"
-                    className="w-full h-[52px] px-4 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 uppercase font-medium focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] transition-all"
+                    placeholder="e.g. B44 8DX"
+                    className="w-full h-[52px] px-4 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 uppercase font-medium focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] transition-all"
                   />
                   <p className="text-xs text-gray-500 leading-relaxed pt-1">
                     We use this to check your location and understand where the work is required.
@@ -569,7 +569,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                   <button
                     type="button"
                     onClick={() => changeStep(1, 'backward')}
-                    className="px-4 py-3.5 rounded-lg border border-[#242F6B] text-[#242F6B] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
+                    className="px-4 py-3.5 rounded-lg border border-[#040205] text-[#040205] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
                     <span>BACK</span>
@@ -579,7 +579,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                     id={`${idPrefix}step2-continue`}
                     type="button"
                     onClick={handleStep2Continue}
-                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
+                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
                   >
                     <span>CONTINUE</span>
                     <ArrowRight className="w-4 h-4" />
@@ -592,7 +592,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             {step === 3 && (
               <div>
                 <div className="mb-3">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#242F6B]">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#040205]">
                     What are you looking for?
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
@@ -615,7 +615,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       value={projectDetails}
                       onChange={(e) => setProjectDetails(e.target.value)}
                       placeholder="Tell us what's happening with your roof, what work you're considering, or anything you'd like us to know..."
-                      className="w-full p-3.5 rounded-lg bg-white border border-[#D0D5DD] text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] leading-relaxed transition-all"
+                      className="w-full p-3.5 rounded-lg bg-white border border-[#D0D5DD] text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] leading-relaxed transition-all"
                     />
                     <p className="text-[11px] text-gray-500 italic mt-1">
                       For example: We have noticed a leak around the chimney and would like someone to inspect it.
@@ -633,7 +633,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       id={`${idPrefix}urgency-select`}
                       value={urgency}
                       onChange={(e) => setUrgency(e.target.value)}
-                      className="w-full h-[48px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] transition-all cursor-pointer"
+                      className="w-full h-[48px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] transition-all cursor-pointer"
                     >
                       {URGENCY_OPTIONS.map((opt) => (
                         <option key={opt} value={opt}>
@@ -648,7 +648,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                   <button
                     type="button"
                     onClick={() => changeStep(2, 'backward')}
-                    className="px-4 py-3.5 rounded-lg border border-[#242F6B] text-[#242F6B] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
+                    className="px-4 py-3.5 rounded-lg border border-[#040205] text-[#040205] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
                     <span>BACK</span>
@@ -658,7 +658,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                     id={`${idPrefix}step3-continue`}
                     type="button"
                     onClick={handleStep3Continue}
-                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
+                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
                   >
                     <span>CONTINUE</span>
                     <ArrowRight className="w-4 h-4" />
@@ -671,7 +671,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
             {step === 4 && (
               <form onSubmit={handleStep4Submit}>
                 <div className="mb-3">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#242F6B]">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#040205]">
                     Where should we send your quote?
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
@@ -685,7 +685,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       htmlFor={`${idPrefix}fullname`}
                       className="block text-xs font-heading font-bold uppercase tracking-wider text-gray-700 mb-1"
                     >
-                      FULL NAME <span className="text-[#ac0e13]">*</span>
+                      FULL NAME <span className="text-[#C80103]">*</span>
                     </label>
                     <input
                       ref={nameInputRef}
@@ -698,7 +698,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                         setErrorMessage('');
                       }}
                       placeholder="Your name"
-                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] transition-all"
+                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] transition-all"
                     />
                   </div>
 
@@ -707,7 +707,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       htmlFor={`${idPrefix}phone`}
                       className="block text-xs font-heading font-bold uppercase tracking-wider text-gray-700 mb-1"
                     >
-                      PHONE NUMBER <span className="text-[#ac0e13]">*</span>
+                      PHONE NUMBER <span className="text-[#C80103]">*</span>
                     </label>
                     <input
                       id={`${idPrefix}phone`}
@@ -719,7 +719,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                         setErrorMessage('');
                       }}
                       placeholder="+44 7XXX XXXXXX"
-                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] transition-all"
+                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] transition-all"
                     />
                   </div>
 
@@ -728,7 +728,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                       htmlFor={`${idPrefix}email`}
                       className="block text-xs font-heading font-bold uppercase tracking-wider text-gray-700 mb-1"
                     >
-                      EMAIL ADDRESS <span className="text-[#ac0e13]">*</span>
+                      EMAIL ADDRESS <span className="text-[#C80103]">*</span>
                     </label>
                     <input
                       id={`${idPrefix}email`}
@@ -740,7 +740,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                         setErrorMessage('');
                       }}
                       placeholder="you@example.com"
-                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#242F6B] focus:border-[#242F6B] transition-all"
+                      className="w-full h-[50px] px-3.5 rounded-lg bg-white border border-[#D0D5DD] text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#040205] focus:border-[#040205] transition-all"
                     />
                   </div>
                 </div>
@@ -749,7 +749,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                   <button
                     type="button"
                     onClick={() => changeStep(3, 'backward')}
-                    className="px-4 py-3.5 rounded-lg border border-[#242F6B] text-[#242F6B] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
+                    className="px-4 py-3.5 rounded-lg border border-[#040205] text-[#040205] hover:bg-gray-50 font-heading font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors cursor-pointer min-h-[48px]"
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
                     <span>BACK</span>
@@ -758,7 +758,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                   <button
                     id={`${idPrefix}final-submit`}
                     type="submit"
-                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
+                    className="flex-1 py-3.5 px-6 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[48px]"
                   >
                     <span>GET MY FREE QUOTE</span>
                     <ArrowRight className="w-4 h-4" />
@@ -766,7 +766,7 @@ export const HeroQualifierForm: React.FC<HeroQualifierFormProps> = ({
                 </div>
 
                 <p className="text-[11px] text-gray-500 text-center mt-3 leading-tight">
-                  By submitting this form, you agree that Keystone Roofing & Building Ltd can contact you regarding your enquiry.
+                  By submitting this form, you agree that A T Roofing Birmingham can contact you regarding your enquiry.
                 </p>
               </form>
             )}

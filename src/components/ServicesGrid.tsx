@@ -22,14 +22,14 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({
       <div className="max-w-[1280px] mx-auto px-6 sm:px-6 lg:px-8">
         {/* Section Header with generous breathing space */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20">
-          <span className="text-xs sm:text-sm font-heading font-bold text-[#ac0e13] uppercase tracking-widest block mb-3">
+          <span className="text-xs sm:text-sm font-heading font-bold text-[#C80103] uppercase tracking-widest block mb-3">
             Comprehensive Services
           </span>
-          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#242F6B] tracking-tight mb-4 sm:mb-5">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#040205] tracking-tight mb-4 sm:mb-5">
             Our Roofing Services
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            From roof repairs and maintenance to complete roof installations, Keystone Roofing & Building Ltd provides practical roofing solutions built around quality workmanship.
+            From roof repairs and maintenance to complete roof installations, A T Roofing Birmingham provides practical roofing solutions built around quality workmanship.
           </p>
         </div>
 

@@ -18,40 +18,40 @@ export const TrustStrip: React.FC = () => {
       icon: Home,
       heading: 'Roofing Specialists',
       description: 'Repairs, renewals & replacements',
-      iconContainerBg: 'bg-[#242F6B]/[0.07]',
-      iconColor: 'text-[#242F6B]',
+      iconContainerBg: 'bg-[#040205]/[0.07]',
+      iconColor: 'text-[#040205]',
     },
     {
       id: 'workmanship',
       icon: ShieldCheck,
       heading: 'Quality Workmanship',
       description: 'Built for long-term protection',
-      iconContainerBg: 'bg-[#242F6B]/[0.07]',
-      iconColor: 'text-[#242F6B]',
+      iconContainerBg: 'bg-[#040205]/[0.07]',
+      iconColor: 'text-[#040205]',
       hasRedAccent: true,
     },
     {
       id: 'local',
       icon: MapPin,
       heading: 'Local Roofing Team',
-      description: 'Serving Reading & Berkshire',
-      iconContainerBg: 'bg-[#242F6B]/[0.07]',
-      iconColor: 'text-[#242F6B]',
+      description: 'Serving Birmingham & West Midlands',
+      iconContainerBg: 'bg-[#040205]/[0.07]',
+      iconColor: 'text-[#040205]',
     },
     {
       id: 'quotes',
       icon: PhoneCall,
       heading: 'Free Quotes',
       description: 'Speak directly with our team',
-      iconContainerBg: 'bg-[#AC0E13]/[0.08]',
-      iconColor: 'text-[#AC0E13]',
+      iconContainerBg: 'bg-[#C80103]/[0.08]',
+      iconColor: 'text-[#C80103]',
     },
   ];
 
   return (
     <section
       id="trust-strip"
-      aria-label="Keystone Roofing & Building Key Values"
+      aria-label="A T Roofing Birmingham Key Values"
       className="relative z-20 py-8 sm:py-10 lg:py-12 px-3 sm:px-4 lg:px-6"
     >
       {/* FLOATING INFORMATION CARD */}
@@ -77,13 +77,13 @@ export const TrustStrip: React.FC = () => {
                 {/* TEXT CONTAINER */}
                 <div className="flex flex-col min-w-0">
                   <div className="flex items-center gap-1.5">
-                    <h3 className="font-heading font-bold text-[17px] sm:text-[17px] lg:text-[17px] xl:text-[19px] text-[#242F6B] tracking-tight leading-tight whitespace-nowrap">
+                    <h3 className="font-heading font-bold text-[17px] sm:text-[17px] lg:text-[17px] xl:text-[19px] text-[#040205] tracking-tight leading-tight whitespace-nowrap">
                       {item.heading}
                     </h3>
                     {item.hasRedAccent && (
                       <span
-                        className="w-1.5 h-1.5 rounded-full bg-[#AC0E13] shrink-0"
-                        title="Keystone Quality Assurance"
+                        className="w-1.5 h-1.5 rounded-full bg-[#C80103] shrink-0"
+                        title="A T Roofing Quality Assurance"
                         aria-hidden="true"
                       />
                     )}

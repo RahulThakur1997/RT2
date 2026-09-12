@@ -22,7 +22,7 @@ export const NewRoofPage: React.FC<NewRoofPageProps> = ({
   useEffect(() => {
     // Set appropriate page title and SEO meta description
     const prevTitle = document.title;
-    document.title = 'New Roof Installations Reading | Keystone Roofing & Building Ltd';
+    document.title = 'New Roof Installations Birmingham | A T Roofing Birmingham';
 
     let metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
@@ -34,7 +34,7 @@ export const NewRoofPage: React.FC<NewRoofPageProps> = ({
     }
     metaDesc.setAttribute(
       'content',
-      'Professional new roof installations for homes and properties across Reading, Berkshire and surrounding areas. Slate, concrete, clay tiles, and full roof replacements.'
+      'Professional new roof installations for homes and properties across Birmingham, West Midlands and surrounding areas. Slate, concrete, clay tiles, and full roof replacements.'
     );
 
     window.scrollTo(0, 0);
@@ -48,7 +48,7 @@ export const NewRoofPage: React.FC<NewRoofPageProps> = ({
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 selection:bg-[#242F6B] selection:text-white flex flex-col font-sans">
+    <div className="min-h-screen bg-white text-gray-900 selection:bg-[#C80103] selection:text-white flex flex-col font-sans">
       {/* 01. HEADER / NAVIGATION */}
       <NewRoofHeader
         onOpenQuoteModal={() => onOpenQuoteModal('New Roof Installations')}

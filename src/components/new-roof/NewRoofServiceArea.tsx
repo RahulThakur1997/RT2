@@ -11,7 +11,7 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
     <section
       id="service-area-section"
       aria-label="New Roof Installation Service Areas"
-      className="relative bg-[#242F6B] text-white py-16 sm:py-20 lg:py-24 overflow-hidden"
+      className="relative bg-[#040205] text-white py-16 sm:py-20 lg:py-24 overflow-hidden"
     >
       {/* Background Subtle Map Texture & Architectural Geometry */}
       <div className="absolute inset-0 pointer-events-none opacity-8">
@@ -26,25 +26,25 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
       </div>
 
       {/* Subtle diagonal ambient gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1b2452]/90 via-[#242F6B] to-[#151D45]/90 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#040205]/95 via-[#1a171d]/90 to-[#040205]/95 pointer-events-none" />
 
       <div className="relative z-10 max-w-[1180px] mx-auto px-5 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* LEFT: Heading, Paragraph, CTA (col-span-5) */}
           <div className="lg:col-span-5 space-y-5">
             <div className="inline-flex items-center gap-2">
-              <span className="h-0.5 w-6 bg-[#ac0e13]" />
+              <span className="h-0.5 w-6 bg-[#C80103]" />
               <span className="text-[10px] sm:text-[11px] font-heading font-bold uppercase tracking-[0.18em] text-white/80">
                 LOCAL COVERAGE &amp; PROMPT RESPONSE
               </span>
             </div>
 
             <h2 className="font-heading text-[24px] sm:text-[28px] lg:text-[34px] font-extrabold text-white leading-[1.15] tracking-tight">
-              New Roof Installations Across Reading &amp; Berkshire
+              New Roof Installations Across Birmingham &amp; West Midlands
             </h2>
 
             <p className="text-sm sm:text-[15px] text-gray-200/90 leading-relaxed font-normal">
-              Based at 116 Ballards Lane, Finchley, London, Keystone Roofing &amp; Building proudly delivers professional new roof installations throughout Finchley, London, and neighbouring communities.
+              Based at 77 Arden Road, Birmingham, B44 8DX, A T Roofing Birmingham proudly delivers professional new roof installations throughout Birmingham, Solihull, Sutton Coldfield, and neighbouring communities.
             </p>
 
             <p className="text-sm sm:text-[15px] text-gray-200/90 leading-relaxed font-normal">
@@ -55,14 +55,14 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
               <button
                 type="button"
                 onClick={onOpenQuoteModal}
-                className="px-6 py-3 rounded-md bg-white hover:bg-gray-100 text-[#242F6B] font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 shadow-md cursor-pointer hover:shadow-lg inline-flex items-center gap-2"
+                className="px-6 py-3 rounded-md bg-white hover:bg-gray-100 text-[#040205] font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 shadow-md cursor-pointer hover:shadow-lg inline-flex items-center gap-2"
               >
                 <span>Contact Us</span>
-                <ArrowRight className="w-4 h-4 text-[#ac0e13]" />
+                <ArrowRight className="w-4 h-4 text-[#C80103]" />
               </button>
 
               <div className="flex items-center gap-1.5 text-xs text-gray-300">
-                <ShieldCheck className="w-4 h-4 text-[#ac0e13]" />
+                <ShieldCheck className="w-4 h-4 text-[#C80103]" />
                 <span>Fully Insured</span>
               </div>
             </div>
@@ -74,8 +74,8 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
               <span className="font-heading font-bold text-xs sm:text-sm tracking-wider uppercase text-white/90">
                 Key Coverage Towns &amp; Villages
               </span>
-              <span className="text-[11px] font-medium text-[#ac0e13] bg-[#ac0e13]/20 px-2 py-0.5 rounded border border-[#ac0e13]/30">
-                Berkshire &amp; Surrounds
+              <span className="text-[11px] font-medium text-[#C80103] bg-[#C80103]/20 px-2 py-0.5 rounded border border-[#C80103]/30">
+                West Midlands &amp; Surrounds
               </span>
             </div>
 
@@ -85,8 +85,8 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
                   key={idx}
                   className="flex items-center gap-2 text-white/90 hover:text-white transition-colors"
                 >
-                  <MapPin className="w-3.5 h-3.5 text-[#ac0e13] shrink-0" />
-                  <span className={loc.startsWith('+') ? 'text-[#ac0e13] font-bold' : ''}>
+                  <MapPin className="w-3.5 h-3.5 text-[#C80103] shrink-0" />
+                  <span className={loc.startsWith('+') ? 'text-[#C80103] font-bold' : ''}>
                     {loc}
                   </span>
                 </div>
@@ -94,7 +94,7 @@ export const NewRoofServiceArea: React.FC<NewRoofServiceAreaProps> = ({ onOpenQu
             </div>
 
             <p className="text-[11px] text-gray-300/80 mt-5 pt-3 border-t border-white/10 italic">
-              *If your property is within a 25-mile radius of Reading, our team is equipped to survey and install your new roof.
+              *If your property is within a 25-mile radius of Birmingham, our team is equipped to survey and install your new roof.
             </p>
           </div>
         </div>

@@ -37,8 +37,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       icon: Home,
       heading: 'Roofing Specialists',
       description: 'Repairs, renewals & replacements',
-      iconContainerBg: 'bg-[#242F6B]/[0.08]',
-      iconColor: 'text-[#242F6B]',
+      iconContainerBg: 'bg-[#040205]/[0.08]',
+      iconColor: 'text-[#040205]',
       hasRedAccent: false,
     },
     {
@@ -46,17 +46,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       icon: ShieldCheck,
       heading: 'Quality Workmanship',
       description: 'Built for long-term weather protection',
-      iconContainerBg: 'bg-[#242F6B]/[0.08]',
-      iconColor: 'text-[#242F6B]',
+      iconContainerBg: 'bg-[#040205]/[0.08]',
+      iconColor: 'text-[#040205]',
       hasRedAccent: true,
     },
     {
       id: 'local',
       icon: MapPin,
       heading: 'Local Roofing Team',
-      description: 'Serving Reading, Wokingham & Berkshire',
-      iconContainerBg: 'bg-[#242F6B]/[0.08]',
-      iconColor: 'text-[#242F6B]',
+      description: 'Serving Birmingham & West Midlands',
+      iconContainerBg: 'bg-[#040205]/[0.08]',
+      iconColor: 'text-[#040205]',
       hasRedAccent: false,
     },
     {
@@ -64,8 +64,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       icon: PhoneCall,
       heading: 'Free Detailed Quotes',
       description: 'Speak directly with our roofing team',
-      iconContainerBg: 'bg-[#AC0E13]/[0.09]',
-      iconColor: 'text-[#AC0E13]',
+      iconContainerBg: 'bg-[#C80103]/[0.09]',
+      iconColor: 'text-[#C80103]',
       hasRedAccent: true,
     },
     {
@@ -73,8 +73,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       icon: Award,
       heading: 'Fully Insured & Vetted',
       description: '£5M public liability insurance cover',
-      iconContainerBg: 'bg-[#242F6B]/[0.08]',
-      iconColor: 'text-[#242F6B]',
+      iconContainerBg: 'bg-[#040205]/[0.08]',
+      iconColor: 'text-[#040205]',
       hasRedAccent: false,
     },
     {
@@ -82,8 +82,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       icon: CheckCircle2,
       heading: 'Guaranteed Standards',
       description: 'Insurance backed warranties on new roofs',
-      iconContainerBg: 'bg-[#AC0E13]/[0.09]',
-      iconColor: 'text-[#AC0E13]',
+      iconContainerBg: 'bg-[#C80103]/[0.09]',
+      iconColor: 'text-[#C80103]',
       hasRedAccent: false,
     },
   ];
@@ -98,24 +98,24 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
   return (
     <section
       id="hero"
-      aria-label="Keystone Roofing & Building Hero"
-      className="relative min-h-[560px] lg:min-h-[750px] xl:min-h-[820px] 2xl:min-h-[860px] flex flex-col justify-between overflow-hidden bg-[#151D45]"
+      aria-label="A T Roofing Birmingham Hero"
+      className="relative min-h-[560px] lg:min-h-[750px] xl:min-h-[820px] 2xl:min-h-[860px] flex flex-col justify-between overflow-hidden bg-[#040205]"
     >
       {/* ====================================================
           BACKGROUND: User Requested British Roofer Slate Tile Sunset Image
-          with #242F6B Dark Navy Overlay for Crisp Readability
+          with #040205 Dark Overlay for Crisp Readability
           ==================================================== */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src="/images/hero-sunset-slate.png"
-          alt="Keystone professional roofer installing slate tiles at sunset on UK residential roof"
+          alt="A T Roofing professional roofer installing slate tiles at sunset on UK residential roof"
           className="w-full h-full object-cover object-[center_38%] scale-100"
         />
 
-        {/* Dark Navy Overlay based on #242F6B */}
-        <div className="absolute inset-0 bg-[#242F6B]/75 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#151D45]/90 via-[#242F6B]/70 to-[#151D45]/80" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#151D45]/80 via-transparent to-[#151D45]/90" />
+        {/* Dark Overlay based on #040205 */}
+        <div className="absolute inset-0 bg-[#040205]/80 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#040205]/95 via-[#040205]/75 to-[#040205]/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#040205]/85 via-transparent to-[#040205]/95" />
       </div>
 
       {/* ====================================================
@@ -134,27 +134,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
           <div className="lg:col-span-7 flex flex-col justify-center text-white pt-0.5 sm:pt-0">
             {/* MAIN HEADLINE (larger & longer on desktop) */}
             <h1 className="font-heading text-white font-extrabold text-[25px] xs:text-[28px] sm:text-[34px] md:text-[40px] lg:text-[48px] xl:text-[54px] 2xl:text-[58px] leading-[1.08] tracking-tight max-w-[700px] drop-shadow-md">
-              Trusted Roofing &amp; Building Experts in Reading &amp; Berkshire
+              Trusted Roofing &amp; Building Experts in Birmingham
             </h1>
 
             {/* SUB-HEADING: Used in desktop/tablet view, hidden on mobile (larger & longer on desktop) */}
             <p className="hidden md:block text-white/95 text-base sm:text-[17px] md:text-[18.5px] lg:text-[20px] xl:text-[21.5px] leading-relaxed mt-3.5 sm:mt-4 lg:mt-5 max-w-[640px] drop-shadow-sm font-normal">
-              Quality workmanship, dependable service, and complete roofing solutions for homes and businesses across Berkshire.
+              Quality workmanship, dependable service, and complete roofing solutions for homes and businesses across Birmingham and the West Midlands.
             </p>
 
             {/* SERVICE QUICK-SELECT: Enlarged, strictly single row on both mobile and desktop with comfortable gap */}
             <div className="mt-4 xs:mt-4.5 sm:mt-5 lg:mt-7 xl:mt-8 w-full max-w-[590px]">
               <div className="bg-white rounded-full p-1.5 sm:p-2 lg:p-2.5 shadow-xl shadow-black/30 border border-white/40 flex flex-row items-center gap-2 sm:gap-3 h-[48px] xs:h-[50px] sm:h-[54px] lg:h-[62px]">
                 <div className="relative flex-grow flex items-center min-w-0 h-full">
-                  <div className="pl-3 sm:pl-4 pr-1.5 sm:pr-2 text-[#242F6B] shrink-0">
-                    <Hammer className="w-4 h-4 sm:w-4.5 sm:h-4.5 lg:w-5 lg:h-5 text-[#AC0E13]" />
+                  <div className="pl-3 sm:pl-4 pr-1.5 sm:pr-2 text-[#040205] shrink-0">
+                    <Hammer className="w-4 h-4 sm:w-4.5 sm:h-4.5 lg:w-5 lg:h-5 text-[#C80103]" />
                   </div>
                   <select
                     id="hero-service-quick-select"
                     value={selectedService}
                     onChange={(e) => setSelectedService(e.target.value)}
                     aria-label="What roofing service do you need?"
-                    className="w-full py-1 pr-7 sm:pr-9 pl-0.5 bg-transparent text-[#242F6B] font-heading font-semibold text-[13px] xs:text-[13.5px] sm:text-[14.5px] lg:text-[16px] xl:text-[16.5px] focus:outline-none appearance-none cursor-pointer truncate"
+                    className="w-full py-1 pr-7 sm:pr-9 pl-0.5 bg-transparent text-[#040205] font-heading font-semibold text-[13px] xs:text-[13.5px] sm:text-[14.5px] lg:text-[16px] xl:text-[16.5px] focus:outline-none appearance-none cursor-pointer truncate"
                   >
                     <option value="" disabled>
                       What roofing service do you need?
@@ -174,7 +174,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
                   id="hero-quick-select-go-btn"
                   type="button"
                   onClick={handleQuickSelectGo}
-                  className="h-[36px] xs:h-[38px] sm:h-[42px] lg:h-[48px] px-4 xs:px-5 sm:px-7 lg:px-8 rounded-full bg-[#AC0E13] hover:bg-[#920b10] text-white font-heading font-bold text-xs xs:text-[13px] sm:text-[14px] lg:text-[15px] tracking-wider uppercase transition-colors shadow-md cursor-pointer flex items-center justify-center gap-1.5 shrink-0 active:scale-95"
+                  className="h-[36px] xs:h-[38px] sm:h-[42px] lg:h-[48px] px-4 xs:px-5 sm:px-7 lg:px-8 rounded-full bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-xs xs:text-[13px] sm:text-[14px] lg:text-[15px] tracking-wider uppercase transition-colors shadow-md cursor-pointer flex items-center justify-center gap-1.5 shrink-0 active:scale-95"
                 >
                   <span>Go</span>
                   <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-4.5 lg:h-4.5" />
@@ -191,10 +191,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center w-full mt-7 xs:mt-8 sm:mt-9 lg:mt-0 lg:pr-2 xl:pr-4">
             {/* 1. PROMOTIONAL CARD CONTAINER */}
             <div className="relative w-full max-w-[340px] xs:max-w-[355px] sm:max-w-[380px] lg:max-w-[430px] xl:max-w-[465px]">
-              {/* Main Promotional Card (#AC0D2E) with edge overlap for floating roof */}
+              {/* Main Promotional Card (#C80103) with edge overlap for floating roof */}
               <div
                 id="hero-promotional-card"
-                className="relative z-10 w-full min-h-[142px] xs:min-h-[152px] sm:min-h-[170px] lg:min-h-[210px] xl:min-h-[224px] bg-[#AC0D2E] text-white rounded-[14px] sm:rounded-[16px] lg:rounded-[18px] p-4 xs:p-4.5 sm:p-5 lg:p-6.5 xl:p-7.5 shadow-xl shadow-black/35 border border-white/20 flex flex-col justify-between"
+                className="relative z-10 w-full min-h-[142px] xs:min-h-[152px] sm:min-h-[170px] lg:min-h-[210px] xl:min-h-[224px] bg-[#C80103] text-white rounded-[14px] sm:rounded-[16px] lg:rounded-[18px] p-4 xs:p-4.5 sm:p-5 lg:p-6.5 xl:p-7.5 shadow-xl shadow-black/35 border border-white/20 flex flex-col justify-between"
               >
                 {/* Floating Imagery (Roof): Freely floating photorealistic roof */}
                 <div
@@ -230,13 +230,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
                   </p>
                 </div>
 
-                {/* Single Primary CTA Button (#1A2254) (enlarged font & button sizing) */}
+                {/* Single Primary CTA Button (#040205) (enlarged font & button sizing) */}
                 <div className="pt-2.5 sm:pt-3 lg:pt-4 relative z-10">
                   <button
                     id="hero-promotional-cta"
                     type="button"
                     onClick={handleFindOutMore}
-                    className="w-[135px] xs:w-[145px] sm:w-[160px] lg:w-[180px] xl:w-[195px] h-[36px] sm:h-[40px] lg:h-[46px] xl:h-[48px] rounded-[8px] bg-[#1A2254] hover:bg-[#12183B] text-white font-heading font-bold text-[11.5px] xs:text-[12px] sm:text-[12.5px] lg:text-[13.5px] xl:text-[14px] uppercase tracking-wider transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-1.5 active:scale-95"
+                    className="w-[135px] xs:w-[145px] sm:w-[160px] lg:w-[180px] xl:w-[195px] h-[36px] sm:h-[40px] lg:h-[46px] xl:h-[48px] rounded-[8px] bg-[#040205] hover:bg-[#1a171d] text-white font-heading font-bold text-[11.5px] xs:text-[12px] sm:text-[12.5px] lg:text-[13.5px] xl:text-[14px] uppercase tracking-wider transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-1.5 active:scale-95"
                   >
                     <span>Find out more</span>
                     <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
@@ -248,13 +248,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
             {/* 2. SINGLE CONTINUOUS WHITE PILL-SHAPED TRUST BAR (larger on desktop) */}
             <div
               id="hero-trust-bar"
-              className="w-full max-w-[340px] xs:max-w-[350px] sm:max-w-[460px] lg:max-w-[530px] xl:max-w-[565px] bg-white rounded-xl sm:rounded-full py-1.5 sm:py-0 sm:h-[68px] lg:h-[82px] xl:h-[86px] px-1.5 sm:px-3 lg:px-4 shadow-lg shadow-black/15 border border-gray-200/90 flex items-center justify-center text-[#242F6B] mt-2 xs:mt-2.5 sm:mt-3 lg:mt-5"
+              className="w-full max-w-[340px] xs:max-w-[350px] sm:max-w-[460px] lg:max-w-[530px] xl:max-w-[565px] bg-white rounded-xl sm:rounded-full py-1.5 sm:py-0 sm:h-[68px] lg:h-[82px] xl:h-[86px] px-1.5 sm:px-3 lg:px-4 shadow-lg shadow-black/15 border border-gray-200/90 flex items-center justify-center text-[#040205] mt-2 xs:mt-2.5 sm:mt-3 lg:mt-5"
             >
               <div className="w-full grid grid-cols-4 items-center divide-x divide-gray-200">
                 {/* Point 1: 20+ Years Experience */}
                 <div className="flex flex-col items-center justify-center text-center px-0.5 sm:px-1.5 lg:px-2">
-                  <Home className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#242F6B] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
-                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#242F6B] leading-tight block">
+                  <Home className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#040205] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
+                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#040205] leading-tight block">
                     20+ Years
                   </span>
                   <span className="text-[7.5px] xs:text-[8px] sm:text-[9px] lg:text-[10.5px] text-gray-500 font-medium leading-tight mt-0.5 block">
@@ -264,8 +264,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
 
                 {/* Point 2: Fully Insured */}
                 <div className="flex flex-col items-center justify-center text-center px-0.5 sm:px-1.5 lg:px-2">
-                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#242F6B] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
-                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#242F6B] leading-tight block">
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#040205] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
+                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#040205] leading-tight block">
                     Fully Insured
                   </span>
                   <span className="text-[7.5px] xs:text-[8px] sm:text-[9px] lg:text-[10.5px] text-gray-500 font-medium leading-tight mt-0.5 block">
@@ -275,8 +275,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
 
                 {/* Point 3: 5★ Rated */}
                 <div className="flex flex-col items-center justify-center text-center px-0.5 sm:px-1.5 lg:px-2">
-                  <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#AC0D2E] fill-[#AC0D2E]/15 mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
-                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#242F6B] leading-tight block">
+                  <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#C80103] fill-[#C80103]/15 mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
+                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#040205] leading-tight block">
                     5★ Rated
                   </span>
                   <span className="text-[7.5px] xs:text-[8px] sm:text-[9px] lg:text-[10.5px] text-gray-500 font-medium leading-tight mt-0.5 block">
@@ -286,8 +286,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
 
                 {/* Point 4: Quality Guaranteed */}
                 <div className="flex flex-col items-center justify-center text-center px-0.5 sm:px-1.5 lg:px-2">
-                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#242F6B] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
-                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#242F6B] leading-tight block">
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#040205] mb-0.5 sm:mb-1 lg:mb-1.5 stroke-[1.8]" />
+                  <span className="font-heading font-extrabold text-[9.5px] xs:text-[10px] sm:text-[11.5px] lg:text-[13.5px] text-[#040205] leading-tight block">
                     Quality
                   </span>
                   <span className="text-[7.5px] xs:text-[8px] sm:text-[9px] lg:text-[10.5px] text-gray-500 font-medium leading-tight mt-0.5 block">
@@ -307,7 +307,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
       <div
         id="hero-bottom-scrolling-strip"
         className="relative z-10 w-full bg-white border-t border-b border-gray-200/90 shadow-md py-2 sm:py-2.5 lg:py-3.5 overflow-hidden select-none"
-        aria-label="Keystone Roofing Key Guarantees and Credentials"
+        aria-label="A T Roofing Key Guarantees and Credentials"
       >
         <div className="animate-marquee flex items-center gap-4 sm:gap-6 whitespace-nowrap">
           {scrollingValues.concat(scrollingValues).map((item, idx) => {
@@ -324,13 +324,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal, onNavigate }) => {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="font-heading font-bold text-xs sm:text-[13px] lg:text-[14px] text-[#242F6B] leading-none">
+                  <span className="font-heading font-bold text-xs sm:text-[13px] lg:text-[14px] text-[#040205] leading-none">
                     {item.heading}
                   </span>
                   {item.hasRedAccent && (
                     <span
-                      className="w-1.5 h-1.5 rounded-full bg-[#AC0E13] shrink-0"
-                      title="Keystone Quality Assurance"
+                      className="w-1.5 h-1.5 rounded-full bg-[#C80103] shrink-0"
+                      title="A T Roofing Quality Assurance"
                     />
                   )}
                   <span className="text-gray-300 select-none">•</span>

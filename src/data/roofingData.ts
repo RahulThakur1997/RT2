@@ -1,24 +1,24 @@
 import { ServiceItem, ProjectItem, ReviewItem, ProcessStep } from '../types';
 
 export const BUSINESS_INFO = {
-  name: 'Keystone Roofing & Building Ltd',
-  phone: '07935 250505',
-  phoneIntl: '+44 7935 250505',
-  telLink: 'tel:+447935250505',
-  freePhone: '0800 051 8429',
-  freePhoneTelLink: 'tel:08000518429',
-  email: 'info@Keystone-roofing-building.co.uk',
+  name: 'A T Roofing Birmingham',
+  phone: '07542 949479',
+  phoneIntl: '+44 7542 949479',
+  telLink: 'tel:+447542949479',
+  freePhone: '0800 002 9796',
+  freePhoneTelLink: 'tel:08000029796',
+  email: 'atroofing0@gmail.com',
   address: {
-    line1: '116 Ballards Lane',
-    line2: 'Finchley',
-    city: 'London',
-    postcode: 'N3 2DN',
+    line1: '77 Arden Road',
+    line2: '',
+    city: 'Birmingham',
+    postcode: 'B44 8DX',
     country: 'United Kingdom',
-    fullFormatted: '116 Ballards Lane, Finchley, London, N3 2DN, United Kingdom'
+    fullFormatted: '77 Arden Road, Birmingham, B44 8DX, United Kingdom'
   },
-  primaryColor: '#242f6b',
-  secondaryColor: '#ac0e13',
-  establishedNote: 'Professional Workmanship across Finchley, London and surrounding areas'
+  primaryColor: '#C80103',
+  secondaryColor: '#040205',
+  establishedNote: 'Professional Workmanship across Birmingham and surrounding areas'
 };
 
 export const SERVICES_LIST: ServiceItem[] = [
@@ -187,15 +187,15 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Roof Replacement',
     projectType: 'Roof Replacement',
     category: 'ROOF REPLACEMENT',
-    location: 'Reading, Berkshire',
+    location: 'Sutton Coldfield, Birmingham',
     heading: 'A Complete Roof Renewal Built for Long-Term Protection',
     cardCopy: 'Full roof replacement focused on long-term weather protection and a clean, professional finish.',
     description:
-      'When an ageing roof begins showing signs of deterioration, patch repairs can only go so far. For this property, Keystone Roofing & Building carried out a complete roof replacement, removing the existing roof and installing a new roofing system designed to provide dependable protection for years to come.',
+      'When an ageing roof begins showing signs of deterioration, patch repairs can only go so far. For this property, A T Roofing Birmingham carried out a complete roof replacement, removing the existing roof and installing a new roofing system designed to provide dependable protection for years to come.',
     challenge:
       'The property had an aging tile structure with perished underlay, degraded timber battens, and recurring water ingress into the roof void during heavy rain. Patch repairs were no longer providing reliable protection.',
     approach:
-      'Keystone Roofing & Building designed a complete strip and renewal strategy. We safely scaffolded the property, stripped the deteriorated tiles down to bare rafters, installed a modern breathable membrane, treated timber battens, and laid new durable tiles with dry-fix systems.',
+      'A T Roofing Birmingham designed a complete strip and renewal strategy. We safely scaffolded the property, stripped the deteriorated tiles down to bare rafters, installed a modern breathable membrane, treated timber battens, and laid new durable tiles with dry-fix systems.',
     workCarriedOut: [
       'Existing roof removal',
       'Roof preparation',
@@ -235,11 +235,11 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Flat Roof Repair & Renewal',
     projectType: 'Flat Roofing',
     category: 'FLAT ROOFING',
-    location: 'Wokingham, Berkshire',
+    location: 'Solihull, Birmingham',
     heading: 'Solving a Persistent Flat Roof Problem',
     cardCopy: 'Targeted repair and waterproofing work to restore a tired flat roof.',
     description:
-      'Flat roofs can develop leaks and deterioration that aren\'t always immediately visible. Keystone Roofing & Building assessed the affected area, identified the source of the problem and carried out the necessary repair and renewal work to restore the roof\'s weather resistance.',
+      'Flat roofs can develop leaks and deterioration that aren\'t always immediately visible. A T Roofing Birmingham assessed the affected area, identified the source of the problem and carried out the necessary repair and renewal work to restore the roof\'s weather resistance.',
     challenge:
       'Hidden standing water and cracked mineral felt on a rear extension were causing interior damp patches after continuous rainfall.',
     approach:
@@ -277,15 +277,15 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Roof Repair & Restoration',
     projectType: 'Roof Repair',
     category: 'ROOF REPAIR',
-    location: 'Reading, Berkshire',
+    location: 'Harborne, Birmingham',
     heading: 'Restoring a Roof Without Replacing What Didn\'t Need Replacing',
     cardCopy: 'Targeted repairs to restore an existing roof while avoiding unnecessary replacement.',
     description:
-      'Not every roofing problem requires a complete replacement. For this property, Keystone Roofing & Building focused on the areas that needed attention, carrying out targeted repairs to restore the roof while avoiding unnecessary work.',
+      'Not every roofing problem requires a complete replacement. For this property, A T Roofing Birmingham focused on the areas that needed attention, carrying out targeted repairs to restore the roof while avoiding unnecessary work.',
     challenge:
       'Broken tiles and perished valley mortar were permitting water to track into the cavity, while the rest of the roof structure remained in solid, salvageable condition.',
     approach:
-      'Rather than advising a costly unnecessary reroof, Keystone performed an honest, focused repair: sourcing matched replacement tiles, fixing slipped slates, and replacing worn valley leadwork.',
+      'Rather than advising a costly unnecessary reroof, A T Roofing performed an honest, focused repair: sourcing matched replacement tiles, fixing slipped slates, and replacing worn valley leadwork.',
     workCarriedOut: [
       'Roof inspection',
       'Damaged tile replacement',
@@ -319,7 +319,7 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Roofline & Guttering Upgrade',
     projectType: 'Roofline & Guttering',
     category: 'ROOFLINE & GUTTERING',
-    location: 'Berkshire',
+    location: 'Edgbaston, Birmingham',
     heading: 'A Cleaner Roofline. Better Water Management.',
     cardCopy: 'Roofline and rainwater improvements for a cleaner, more functional exterior.',
     description:
@@ -361,11 +361,11 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'New Roof Installation',
     projectType: 'New Roofing',
     category: 'ROOF REPLACEMENT',
-    location: 'Arborfield / Reading',
+    location: 'Perry Barr, Birmingham',
     heading: 'A New Roof From the Ground Up',
     cardCopy: 'A new roof delivered with correct preparation, precise installation and a clean final finish.',
     description:
-      'For this property, Keystone Roofing & Building delivered a new roofing installation with a focus on correct preparation, precise installation and a clean final finish.',
+      'For this property, A T Roofing Birmingham delivered a new roofing installation with a focus on correct preparation, precise installation and a clean final finish.',
     challenge:
       'A large property requiring a brand-new pitched roof assembly with strict ventilation compliance, intricate valley junctions, and architectural curb appeal.',
     approach:
@@ -403,15 +403,15 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Exterior Building Improvements',
     projectType: 'Building & Exterior Works',
     category: 'BUILDING & EXTERIOR',
-    location: 'Berkshire',
+    location: 'Great Barr, Birmingham',
     heading: 'Improving More Than What\'s Above Your Head',
     cardCopy: 'Combining roofing expertise with exterior building works for a consistent, high-quality finish.',
     description:
-      'Keystone Roofing & Building combines roofing expertise with wider building capabilities, allowing homeowners to address related exterior works through one experienced team. For this project, the focus was on improving the property\'s exterior while maintaining a consistent, high-quality finish across the completed works.',
+      'A T Roofing Birmingham combines roofing expertise with wider building capabilities, allowing homeowners to address related exterior works through one experienced team. For this project, the focus was on improving the property\'s exterior while maintaining a consistent, high-quality finish across the completed works.',
     challenge:
       'The property suffered from cracking exterior render, weathered chimney brickwork, and loose gable pointing that created vulnerabilities around the roof structure.',
     approach:
-      'Keystone integrated building masonry repairs with roof perimeter sealing, repointing the chimney stack, renewing gable verge pointing, and weather-proofing vulnerable exterior surfaces.',
+      'A T Roofing integrated building masonry repairs with roof perimeter sealing, repointing the chimney stack, renewing gable verge pointing, and weather-proofing vulnerable exterior surfaces.',
     workCarriedOut: [
       'Exterior building works',
       'Repairs and preparation',
@@ -444,11 +444,11 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Storm Damage Repair',
     projectType: 'Emergency Roof Repair',
     category: 'ROOF REPAIR',
-    location: 'Reading, Berkshire',
+    location: 'Kingstanding, Birmingham',
     heading: 'From Storm Damage to Secure Again',
     cardCopy: 'Fast response restoring weather resistance and safety following severe storm winds.',
     description:
-      'When severe weather compromises a roof, the priority is to make the property secure and prevent further damage. Keystone Roofing & Building assessed the affected areas and carried out the necessary repair work to restore the roof\'s protection.',
+      'When severe weather compromises a roof, the priority is to make the property secure and prevent further damage. A T Roofing Birmingham assessed the affected areas and carried out the necessary repair work to restore the roof\'s protection.',
     challenge:
       'High winds had torn off ridge tiles, displaced several courses of slate, and exposed the roof void to wind-driven rain, posing an immediate threat to ceilings below.',
     approach:
@@ -486,15 +486,15 @@ export const PROJECTS_LIST: ProjectItem[] = [
     title: 'Full Roof & Exterior Refresh',
     projectType: 'Roofing & Building',
     category: 'BUILDING & EXTERIOR',
-    location: 'Berkshire',
+    location: 'Erdington, Birmingham',
     heading: 'A Complete Exterior Refresh',
     cardCopy: 'Whole-house approach combining roofing and exterior works for lasting performance.',
     description:
-      'This project combined roofing and exterior improvements to give the property a more complete transformation. Rather than treating each issue individually, Keystone Roofing & Building approached the property as a whole to ensure the finished work looked cohesive and performed properly.',
+      'This project combined roofing and exterior improvements to give the property a more complete transformation. Rather than treating each issue individually, A T Roofing Birmingham approached the property as a whole to ensure the finished work looked cohesive and performed properly.',
     challenge:
       'Decades of disjointed patch repairs had left the property with mismatched roof tiles, failing lead flashings, and stained roofline fascias that spoiled the home\'s aesthetic and durability.',
     approach:
-      'Keystone addressed the building holistically: overhauling the roof covering, renewing lead abutments, installing sleek new roofline systems, and giving exterior details a crisp, unified finish.',
+      'A T Roofing addressed the building holistically: overhauling the roof covering, renewing lead abutments, installing sleek new roofline systems, and giving exterior details a crisp, unified finish.',
     workCarriedOut: [
       'Whole-roof assessment',
       'Tile and batten restoration',
@@ -528,16 +528,16 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-1',
     customerName: 'David Morrison',
-    location: 'Caversham, Reading',
+    location: 'Sutton Coldfield, Birmingham',
     rating: 5,
     projectType: 'Roof Repair & Leak Fix',
-    review: 'Keystone were professional from start to finish. The work was explained clearly and everything was left clean and tidy.',
+    review: 'A T Roofing were professional from start to finish. The work was explained clearly and everything was left clean and tidy.',
     avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
   },
   {
     id: 'rev-2',
     customerName: 'Sarah Jenkins',
-    location: 'Earley, Reading',
+    location: 'Solihull, Birmingham',
     rating: 5,
     projectType: 'Guttering Replacement',
     review: 'Very happy with the work. Communication was excellent and the roofing team were punctual and professional.',
@@ -546,7 +546,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-3',
     customerName: 'Mark Butterworth',
-    location: 'Arborfield Cross',
+    location: 'Perry Barr, Birmingham',
     rating: 5,
     projectType: 'Flat Roof Installation',
     review: 'The team arrived on time, completed the flat roof renewal within the agreed timeframe, and provided clear before-and-after photographs.',
@@ -555,7 +555,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-4',
     customerName: 'Emma & Richard Collins',
-    location: 'Wokingham Area',
+    location: 'Harborne, Birmingham',
     rating: 5,
     projectType: 'Chimney & Lead Work',
     review: 'Honest advice regarding our chimney leak. No hard sell, straightforward quotation, and the work stood up well during recent heavy rain.',
@@ -564,7 +564,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-5',
     customerName: 'James Henderson',
-    location: 'Woodley, Reading',
+    location: 'Edgbaston, Birmingham',
     rating: 5,
     projectType: 'Tile Replacement',
     review: 'Outstanding craftsmanship replacing broken tiles on our terrace roof. Punctual, polite, and great value for money.',
@@ -573,7 +573,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-6',
     customerName: 'Claire Davies',
-    location: 'Tilehurst, Reading',
+    location: 'Great Barr, Birmingham',
     rating: 5,
     projectType: 'Fascias & Soffits',
     review: 'Replaced our worn wooden fascias with modern uPVC. The property looks completely refreshed and the finish is immaculate.',
@@ -582,7 +582,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-7',
     customerName: 'Peter Walsh',
-    location: 'Bracknell',
+    location: 'Erdington, Birmingham',
     rating: 5,
     projectType: 'Complete Re-roofing',
     review: 'Major roofing renewal carried out with minimal disruption to the family. Daily progress updates and meticulous cleanup each day.',
@@ -591,7 +591,7 @@ export const REVIEWS_LIST: ReviewItem[] = [
   {
     id: 'rev-8',
     customerName: 'Helen Thorne',
-    location: 'Twyford',
+    location: 'Moseley, Birmingham',
     rating: 5,
     projectType: 'Emergency Leak Repair',
     review: 'Responded same-day during high winds to secure loose ridge tiles and stop water ingress. Thoroughly dependable and honest.',
@@ -600,18 +600,18 @@ export const REVIEWS_LIST: ReviewItem[] = [
 ];
 
 export const SERVICE_AREAS = [
-  'Reading',
-  'Arborfield Cross',
-  'Wokingham',
-  'Shinfield',
-  'Winnersh',
-  'Earley',
-  'Woodley',
-  'Twyford',
-  'Spencers Wood',
-  'Finchampstead',
-  'Barkham',
-  'Sindlesham'
+  'Birmingham',
+  'Sutton Coldfield',
+  'Solihull',
+  'Erdington',
+  'Perry Barr',
+  'Kingstanding',
+  'Great Barr',
+  'Edgbaston',
+  'Harborne',
+  'Moseley',
+  'Kings Heath',
+  'Walsall'
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [

@@ -20,10 +20,10 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuoteModal
       <div className="max-w-[1280px] mx-auto px-6 sm:px-6 lg:px-8">
         {/* SECTION HEADER & EYEBROW */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <span className="text-xs sm:text-sm font-heading font-bold text-[#ac0e13] uppercase tracking-widest block mb-3">
+          <span className="text-xs sm:text-sm font-heading font-bold text-[#C80103] uppercase tracking-widest block mb-3">
             OUR RECENT WORK
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#151D45] tracking-tight leading-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#040205] tracking-tight leading-tight">
             Built to Protect.
             <br />
             Finished to Impress.
@@ -42,8 +42,8 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuoteModal
                 <BeforeAfterSlider
                   beforeImage={project.images?.before || '/images/project-01-before.jpg'}
                   afterImage={project.images?.after || project.image}
-                  beforeAlt="Before: Weathered, aged roof tiles and compromised verge pointing in Reading"
-                  afterAlt="After: Precision complete roof replacement by Keystone Roofing & Building Ltd"
+                  beforeAlt="Before: Weathered, aged roof tiles and compromised verge pointing in Birmingham"
+                  afterAlt="After: Precision complete roof replacement by A T Roofing Birmingham"
                   beforeLabel="Before"
                   afterLabel="After"
                   initialPosition={50}
@@ -55,11 +55,11 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuoteModal
               <div className="lg:col-span-5 p-7 sm:p-9 lg:p-11 flex flex-col justify-between bg-white">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3.5">
-                    <span className="text-xs font-heading font-bold text-[#ac0e13] uppercase tracking-widest">
+                    <span className="text-xs font-heading font-bold text-[#C80103] uppercase tracking-widest">
                       ROOF REPLACEMENT
                     </span>
                     <span className="flex items-center gap-1 text-xs text-gray-500 font-medium">
-                      <MapPin className="w-3.5 h-3.5 text-[#ac0e13]" />
+                      <MapPin className="w-3.5 h-3.5 text-[#C80103]" />
                       {project.location}
                     </span>
                   </div>
@@ -77,7 +77,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuoteModal
                     <div className="grid grid-cols-3 gap-2.5 py-4 border-y border-gray-100 mb-6">
                       {project.statsRow.map((stat) => (
                         <div key={stat.number} className="text-center p-2.5 rounded-[10px] bg-gray-50 border border-gray-100/80">
-                          <span className="block font-mono text-sm sm:text-base font-bold text-[#ac0e13]">
+                          <span className="block font-mono text-sm sm:text-base font-bold text-[#C80103]">
                             {stat.number}
                           </span>
                           <span className="block text-[11px] font-heading font-semibold text-gray-700 uppercase tracking-tight mt-0.5">
@@ -94,7 +94,7 @@ export const ProjectGallery: React.FC<ProjectGalleryProps> = ({ onOpenQuoteModal
                     type="button"
                     id="featured-view-case-study-btn"
                     onClick={() => setSelectedProject(project)}
-                    className="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-[#151D45] hover:bg-[#ac0e13] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2.5 transition-colors cursor-pointer shadow-md"
+                    className="w-full sm:w-auto px-7 py-3.5 rounded-lg bg-[#040205] hover:bg-[#C80103] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2.5 transition-colors cursor-pointer shadow-md"
                   >
                     <span>View Case Study</span>
                     <ArrowRight className="w-4 h-4" />

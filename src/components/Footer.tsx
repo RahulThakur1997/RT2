@@ -57,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({
 
   return (
     <>
-      <footer id="main-footer" className="bg-[#151D45] text-white pt-20 lg:pt-24 pb-16 border-t border-white/10">
+      <footer id="main-footer" className="bg-[#040205] text-white pt-20 lg:pt-24 pb-16 border-t border-white/10">
         <div className="max-w-[1280px] mx-auto px-6 sm:px-6 lg:px-8">
           {/* Top Row: Logo & Brand Summary with comfortable pacing */}
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-14 border-b border-white/10">
@@ -74,7 +74,7 @@ export const Footer: React.FC<FooterProps> = ({
               <button
                 id="footer-quote-btn"
                 onClick={() => onOpenQuoteModal()}
-                className="px-7 py-3.5 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 cursor-pointer shadow-sm hover:-translate-y-0.5"
+                className="px-7 py-3.5 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 cursor-pointer shadow-sm hover:-translate-y-0.5"
               >
                 GET A FREE QUOTE
               </button>
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({
               </h3>
               <div className="space-y-4 text-sm text-gray-300">
                 <div className="flex items-start gap-3.5">
-                  <Phone className="w-4.5 h-4.5 text-[#ac0e13] shrink-0 mt-0.5" />
+                  <Phone className="w-4.5 h-4.5 text-[#C80103] shrink-0 mt-0.5" />
                   <div>
                     <span className="text-xs text-gray-400 block mb-0.5">Telephone</span>
                     <a
@@ -124,7 +124,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <Mail className="w-4.5 h-4.5 text-[#ac0e13] shrink-0 mt-0.5" />
+                  <Mail className="w-4.5 h-4.5 text-[#C80103] shrink-0 mt-0.5" />
                   <div>
                     <span className="text-xs text-gray-400 block mb-0.5">Email</span>
                     <a
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <MapPin className="w-4.5 h-4.5 text-[#ac0e13] shrink-0 mt-0.5" />
+                  <MapPin className="w-4.5 h-4.5 text-[#C80103] shrink-0 mt-0.5" />
                   <div>
                     <span className="text-xs text-gray-400 block mb-0.5">Registered Address</span>
                     <p className="leading-relaxed text-xs sm:text-sm">
@@ -232,14 +232,14 @@ export const Footer: React.FC<FooterProps> = ({
 
           {/* Bottom Row: Legal Links & Copyright */}
           <div className="pt-10 sm:pt-12 flex flex-col sm:flex-row items-center justify-between gap-5 text-xs text-gray-400">
-            <p>© 2026 Keystone Roofing &amp; Building Ltd. All Rights Reserved.</p>
+            <p>© 2026 A T Roofing Birmingham. All Rights Reserved.</p>
 
             <div className="flex items-center gap-6 sm:gap-8">
               <button
                 onClick={() =>
                   openLegal(
                     'Privacy Policy',
-                    'Keystone Roofing & Building Ltd is committed to ensuring customer privacy. Any information submitted through our contact forms is used solely to provide roofing quotations and communication regarding your requested project. We do not share customer data with external marketing third-parties.'
+                    'A T Roofing Birmingham is committed to ensuring customer privacy. Any information submitted through our contact forms is used solely to provide roofing quotations and communication regarding your requested project. We do not share customer data with external marketing third-parties.'
                   )
                 }
                 className="hover:text-gray-200 hover:underline cursor-pointer"
@@ -261,7 +261,7 @@ export const Footer: React.FC<FooterProps> = ({
                 onClick={() =>
                   openLegal(
                     'Terms & Conditions',
-                    'All written quotations provided by Keystone Roofing & Building Ltd remain valid for 30 days unless otherwise agreed. Roofing inspections and works are scheduled subject to property access and safe weather conditions.'
+                    'All written quotations provided by A T Roofing Birmingham remain valid for 30 days unless otherwise agreed. Roofing inspections and works are scheduled subject to property access and safe weather conditions.'
                   )
                 }
                 className="hover:text-gray-200 hover:underline cursor-pointer"
@@ -283,7 +283,7 @@ export const Footer: React.FC<FooterProps> = ({
             className="bg-white text-gray-900 rounded-lg max-w-lg w-full p-6 shadow-2xl relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="font-heading text-xl font-bold text-[#242F6B] mb-3">
+            <h3 className="font-heading text-xl font-bold text-[#040205] mb-3">
               {legalModalContent.title}
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed mb-5">
@@ -292,7 +292,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="text-right">
               <button
                 onClick={() => setLegalModalContent(null)}
-                className="px-5 py-2 rounded bg-[#242F6B] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#1b2350] cursor-pointer"
+                className="px-5 py-2 rounded bg-[#040205] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#C80103] cursor-pointer"
               >
                 Close
               </button>

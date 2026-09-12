@@ -23,7 +23,7 @@ const FEATURES: FeatureItemData[] = [
     description:
       "Straightforward quotations with no unnecessary surprises. We explain the work clearly so you know exactly what you're paying for.",
     image: '/images/why-choose-pricing.jpg',
-    alt: 'Keystone clear and transparent pricing and detailed roofing assessment in Berkshire',
+    alt: 'A T Roofing clear and transparent pricing and detailed roofing assessment in Birmingham',
   },
   {
     id: 'customer-care',
@@ -33,7 +33,7 @@ const FEATURES: FeatureItemData[] = [
     description:
       'From your first enquiry to project completion, our team keeps you informed and makes the process simple.',
     image: '/images/why-choose-service.jpg',
-    alt: 'Keystone customer service and dedicated roofing team keeping homeowners informed',
+    alt: 'A T Roofing customer service and dedicated roofing team keeping homeowners informed',
   },
   {
     id: 'premium-craftsmanship',
@@ -43,7 +43,7 @@ const FEATURES: FeatureItemData[] = [
     description:
       'We combine skilled workmanship with quality materials to deliver durable roofing and building solutions designed to stand the test of time.',
     image: '/images/why-choose-quality.jpg',
-    alt: 'Skilled roofing craftsmanship and premium durable materials installed by Keystone',
+    alt: 'Skilled roofing craftsmanship and premium durable materials installed by A T Roofing',
   },
   {
     id: 'experienced-team',
@@ -53,7 +53,7 @@ const FEATURES: FeatureItemData[] = [
     description:
       'Our experienced team brings professional knowledge, careful attention to detail and dependable workmanship to every project.',
     image: '/images/why-choose-experts.jpg',
-    alt: 'Experienced and trusted Keystone roofing and building professionals working on residential roof',
+    alt: 'Experienced and trusted A T Roofing Birmingham professionals working on residential roof',
   },
 ];
 
@@ -83,16 +83,16 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
         aria-controls="feature-image-viewport"
         onClick={onSelect}
         onMouseEnter={onSelect}
-        className={`w-full text-left transition-all duration-200 cursor-pointer group rounded-r-[12px] rounded-l-[4px] px-3.5 sm:px-4 py-3 sm:py-3.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#242F6B]/60 ${
+        className={`w-full text-left transition-all duration-200 cursor-pointer group rounded-r-[12px] rounded-l-[4px] px-3.5 sm:px-4 py-3 sm:py-3.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#040205]/60 ${
           isActive
-            ? 'bg-[#EEF3F9] border-l-[3.5px] border-[#242F6B] shadow-xs'
+            ? 'bg-[#EEF3F9] border-l-[3.5px] border-[#C80103] shadow-xs'
             : 'border-l-[3.5px] border-transparent hover:bg-gray-100/60'
         }`}
       >
         {/* Eyebrow */}
         <span
           className={`block text-[10.5px] sm:text-[11px] font-mono sm:font-heading font-bold tracking-[0.06em] uppercase mb-1 transition-colors ${
-            isActive ? 'text-[#ac0e13]' : 'text-gray-400 group-hover:text-gray-600'
+            isActive ? 'text-[#C80103]' : 'text-gray-400 group-hover:text-gray-600'
           }`}
         >
           {feature.eyebrow}
@@ -102,8 +102,8 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
         <h3
           className={`text-[17px] sm:text-[19px] lg:text-[20px] font-heading font-bold tracking-tight leading-snug mb-1 transition-colors ${
             isActive
-              ? 'text-[#242F6B]'
-              : 'text-[#151D45]/85 group-hover:text-[#242F6B]'
+              ? 'text-[#040205]'
+              : 'text-[#040205]/85 group-hover:text-[#040205]'
           }`}
         >
           {feature.title}
@@ -149,7 +149,7 @@ const FeatureImage: React.FC<FeatureImageProps> = ({
       id="feature-image-viewport"
       role="tabpanel"
       aria-labelledby={`feature-tab-${features[activeIndex].id}`}
-      className="relative w-full aspect-[4/3] rounded-[14px] sm:rounded-[18px] overflow-hidden bg-slate-900 shadow-xl shadow-[#151D45]/10 border border-gray-200/90"
+      className="relative w-full aspect-[4/3] rounded-[14px] sm:rounded-[18px] overflow-hidden bg-slate-900 shadow-xl shadow-black/10 border border-gray-200/90"
     >
       {/* Preload and layer all images inside the same container for zero layout shift and instant crossfade */}
       {features.map((item, index) => {
@@ -186,7 +186,7 @@ const FeatureImage: React.FC<FeatureImageProps> = ({
 
       {/* Small live badge indicator at bottom right of image */}
       <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-20 pointer-events-none">
-        <span className="px-2.5 py-1 rounded-md bg-[#151D45]/85 text-white font-mono text-[11px] font-semibold tracking-wider uppercase backdrop-blur-xs border border-white/10 shadow-sm">
+        <span className="px-2.5 py-1 rounded-md bg-[#040205]/85 text-white font-mono text-[11px] font-semibold tracking-wider uppercase backdrop-blur-xs border border-white/10 shadow-sm">
           {features[activeIndex].number} / 04
         </span>
       </div>
@@ -201,7 +201,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
     <section
       id="why-us"
       className="bg-[#F8F9FA] py-16 sm:py-20 lg:py-24 border-b border-gray-200/80 scroll-mt-20 lg:scroll-mt-24"
-      aria-labelledby="why-keystone-heading"
+      aria-labelledby="why-roofing-heading"
     >
       <div className="max-w-[1280px] mx-auto px-6 sm:px-6 lg:px-8">
         {/* ====================================================
@@ -213,16 +213,16 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
           {/* LEFT COLUMN: Editorial Trust propositions */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             {/* Section Eyebrow */}
-            <span className="text-xs sm:text-[13px] font-heading font-bold text-[#ac0e13] uppercase tracking-widest block mb-2 sm:mb-2.5">
-              WHY CHOOSE KEYSTONE?
+            <span className="text-xs sm:text-[13px] font-heading font-bold text-[#C80103] uppercase tracking-widest block mb-2 sm:mb-2.5">
+              WHY CHOOSE A T ROOFING?
             </span>
 
             {/* Section Main Heading */}
             <h2
-              id="why-keystone-heading"
-              className="font-heading text-[28px] xs:text-[32px] sm:text-4xl lg:text-[40px] xl:text-[44px] font-bold text-[#242F6B] tracking-tight leading-[1.12] mb-6 sm:mb-7 max-w-[580px]"
+              id="why-roofing-heading"
+              className="font-heading text-[28px] xs:text-[32px] sm:text-4xl lg:text-[40px] xl:text-[44px] font-bold text-[#040205] tracking-tight leading-[1.12] mb-6 sm:mb-7 max-w-[580px]"
             >
-              Why homeowners trust Keystone for their roofing &amp; building needs
+              Why homeowners trust A T Roofing for their roofing &amp; building needs
             </h2>
 
             {/* Mobile Viewport: Single Image rendered right after heading for immediate responsive feedback */}
@@ -233,7 +233,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
             {/* Feature List: 4 interactive selectable propositions */}
             <div
               role="tablist"
-              aria-label="Why Choose Keystone trust features"
+              aria-label="Why Choose A T Roofing trust features"
               className="flex flex-col space-y-1 w-full"
             >
               {FEATURES.map((feature, idx) => (
@@ -258,5 +258,6 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
   );
 };
 
-// Also export as WhyChooseKeystoneSection alias for architectural naming
+// Also export as WhyChooseATRoofingSection alias for architectural naming
+export const WhyChooseATRoofingSection = WhyChooseUs;
 export const WhyChooseKeystoneSection = WhyChooseUs;

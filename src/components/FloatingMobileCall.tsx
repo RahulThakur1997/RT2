@@ -11,12 +11,12 @@ export const FloatingMobileCall: React.FC = () => {
       <a
         id="floating-mobile-call-btn"
         href={BUSINESS_INFO.telLink}
-        className="w-full py-3.5 px-5 rounded-full bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-xl flex items-center justify-center gap-2.5 border-2 border-white/20 transition-transform active:scale-98"
+        className="w-full py-3.5 px-5 rounded-full bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-xl flex items-center justify-center gap-2.5 border-2 border-white/20 transition-transform active:scale-98"
       >
         <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
           <Phone className="w-3.5 h-3.5 text-white" />
         </div>
-        <span>CALL KEYSTONE ({BUSINESS_INFO.phone})</span>
+        <span>CALL A T ROOFING ({BUSINESS_INFO.phone})</span>
       </a>
     </div>
   );

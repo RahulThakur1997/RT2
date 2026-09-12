@@ -85,14 +85,14 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky Header Bar */}
-        <div className="bg-[#151D45] text-white px-5 sm:px-7 py-3.5 flex items-center justify-between border-b border-white/10 shrink-0">
+        <div className="bg-[#040205] text-white px-5 sm:px-7 py-3.5 flex items-center justify-between border-b border-white/10 shrink-0">
           <div className="flex items-center gap-3">
             {project.projectNumber ? (
-              <span className="w-7 h-7 rounded-md bg-[#ac0e13] font-mono text-xs font-bold flex items-center justify-center text-white">
+              <span className="w-7 h-7 rounded-md bg-[#C80103] font-mono text-xs font-bold flex items-center justify-center text-white">
                 {project.projectNumber}
               </span>
             ) : (
-              <span className="px-2.5 py-1 rounded-md bg-[#ac0e13] font-heading text-xs font-bold text-white uppercase tracking-wider">
+              <span className="px-2.5 py-1 rounded-md bg-[#C80103] font-heading text-xs font-bold text-white uppercase tracking-wider">
                 Roof Replacement
               </span>
             )}
@@ -110,7 +110,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
             id="lightbox-close-header-btn"
             onClick={onClose}
             aria-label="Close case study"
-            className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#ac0e13] text-white flex items-center justify-center transition-colors cursor-pointer"
+            className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C80103] text-white flex items-center justify-center transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
@@ -122,17 +122,17 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
           <div className="space-y-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2">
-                <span className="px-3 py-1 rounded bg-[#151D45] text-white font-heading font-bold text-xs tracking-wider uppercase">
+                <span className="px-3 py-1 rounded bg-[#040205] text-white font-heading font-bold text-xs tracking-wider uppercase">
                   {project.projectType}
                 </span>
                 <span className="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded">
-                  <MapPin className="w-3.5 h-3.5 text-[#ac0e13]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#C80103]" />
                   {project.location}
                 </span>
               </div>
               <span className="text-xs text-gray-400 flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
-                Verified Keystone Case Study
+                Verified A T Roofing Case Study
               </span>
             </div>
 
@@ -150,7 +150,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
           <div className="pt-6 space-y-3">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
-                <span className="text-[11px] font-mono uppercase tracking-widest text-[#ac0e13] font-semibold">
+                <span className="text-[11px] font-mono uppercase tracking-widest text-[#C80103] font-semibold">
                   Visual Documentation
                 </span>
                 <h3 className="text-base sm:text-lg font-heading font-bold text-gray-900">
@@ -166,7 +166,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                     onClick={() => setActiveStage('slider')}
                     className={`px-3 py-1.5 rounded-md text-xs font-heading font-bold tracking-wider uppercase transition-all cursor-pointer ${
                       activeStage === 'slider'
-                        ? 'bg-[#ac0e13] text-white shadow-xs'
+                        ? 'bg-[#C80103] text-white shadow-xs'
                         : 'text-gray-600 hover:text-gray-900'
                     }`}
                   >
@@ -178,7 +178,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                   onClick={() => setActiveStage('before')}
                   className={`px-3 py-1.5 rounded-md text-xs font-heading font-bold tracking-wider uppercase transition-all cursor-pointer ${
                     activeStage === 'before'
-                      ? 'bg-[#ac0e13] text-white shadow-xs'
+                      ? 'bg-[#C80103] text-white shadow-xs'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -189,7 +189,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                   onClick={() => setActiveStage('inProgress')}
                   className={`px-3 py-1.5 rounded-md text-xs font-heading font-bold tracking-wider uppercase transition-all cursor-pointer ${
                     activeStage === 'inProgress'
-                      ? 'bg-[#151D45] text-white shadow-xs'
+                      ? 'bg-[#040205] text-white shadow-xs'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -236,9 +236,9 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                     <span
                       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-heading font-bold uppercase tracking-wider text-white shadow-md ${
                         activeStage === 'before'
-                          ? 'bg-[#ac0e13]'
+                          ? 'bg-[#C80103]'
                           : activeStage === 'inProgress'
-                          ? 'bg-[#151D45]'
+                          ? 'bg-[#040205]'
                           : 'bg-emerald-700'
                       }`}
                     >
@@ -275,13 +275,13 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
             </div>
 
             {/* Our Approach */}
-            <div className="p-5 rounded-lg bg-blue-50/60 border border-blue-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-[#151D45] font-heading font-bold text-xs uppercase tracking-wider">
-                <Lightbulb className="w-4 h-4 text-[#151D45] shrink-0" />
+            <div className="p-5 rounded-lg bg-red-50/60 border border-red-200/80 space-y-2">
+              <div className="flex items-center gap-2 text-[#040205] font-heading font-bold text-xs uppercase tracking-wider">
+                <Lightbulb className="w-4 h-4 text-[#C80103] shrink-0" />
                 <span>03 — Our Approach</span>
               </div>
               <h4 className="font-heading font-bold text-base text-gray-900">
-                Keystone&apos;s Solution
+                A T Roofing&apos;s Solution
               </h4>
               <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
                 {project.approach}
@@ -291,8 +291,8 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
 
           {/* SECTION 04 — The Work: Numbered Process & Checklist */}
           <div className="pt-6 space-y-5">
-            <div className="flex items-center gap-2 text-[#ac0e13] font-heading font-bold text-xs uppercase tracking-wider">
-              <Wrench className="w-4 h-4 text-[#ac0e13] shrink-0" />
+            <div className="flex items-center gap-2 text-[#C80103] font-heading font-bold text-xs uppercase tracking-wider">
+              <Wrench className="w-4 h-4 text-[#C80103] shrink-0" />
               <span>04 — The Work Undertaken</span>
             </div>
 
@@ -305,7 +305,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                     className="p-3.5 rounded-lg bg-gray-50 border border-gray-200 flex flex-col justify-between"
                   >
                     <div>
-                      <span className="font-mono text-xs font-bold text-[#ac0e13] block mb-1">
+                      <span className="font-mono text-xs font-bold text-[#C80103] block mb-1">
                         STEP {step.step}
                       </span>
                       <h5 className="font-heading font-bold text-xs sm:text-sm text-gray-900 leading-tight">
@@ -353,7 +353,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
           </div>
 
           {/* SECTION 06 — Ready to Discuss Your Property? CTA */}
-          <div className="pt-6 bg-[#151D45] text-white p-6 sm:p-8 rounded-xl space-y-4">
+          <div className="pt-6 bg-[#040205] text-white p-6 sm:p-8 rounded-xl space-y-4">
             <span className="text-[11px] font-mono uppercase tracking-widest text-red-400 font-bold">
               06 — Next Step
             </span>
@@ -362,7 +362,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                 Ready to Discuss Your Property?
               </h3>
               <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mt-2">
-                Your roof doesn&apos;t have to wait until there&apos;s a problem. Talk to Keystone Roofing &amp; Building about your next project in Reading, Wokingham, or across Berkshire.
+                Your roof doesn&apos;t have to wait until there&apos;s a problem. Talk to A T Roofing Birmingham about your next project in Birmingham, Solihull, Sutton Coldfield, or across the West Midlands.
               </p>
             </div>
 
@@ -374,7 +374,7 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
                   onClose();
                   onOpenQuoteModal(`${project.title} (${project.projectType})`);
                 }}
-                className="px-6 py-3.5 rounded-lg bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-colors cursor-pointer"
+                className="px-6 py-3.5 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2 shadow-md transition-colors cursor-pointer"
               >
                 <span>Request a Free Quote</span>
                 <ArrowRight className="w-4 h-4" />

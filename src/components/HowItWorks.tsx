@@ -73,12 +73,12 @@ const ProcessCard: React.FC<{ step: ProcessStep }> = ({ step }) => {
   return (
     <article
       id={step.id}
-      className="w-full bg-[#EEF3F9] rounded-[16px] sm:rounded-[18px] p-5 sm:p-6 lg:py-5 lg:px-6 xl:py-6 xl:px-7 border border-[#DCE5F2]/90 hover:border-[#242F6B]/30 hover:shadow-xs transition-all duration-200"
+      className="w-full bg-[#f8f9fa] rounded-[16px] sm:rounded-[18px] p-5 sm:p-6 lg:py-5 lg:px-6 xl:py-6 xl:px-7 border border-gray-200 hover:border-[#C80103]/30 hover:shadow-xs transition-all duration-200"
     >
       <div className="flex items-center gap-4 sm:gap-5 lg:gap-6">
-        {/* Left: Vertically centered Navy Line Icon (~70px - 85px column area) */}
+        {/* Left: Vertically centered Line Icon (~70px - 85px column area) */}
         <div
-          className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 lg:w-14 lg:h-14 flex items-center justify-center text-[#242F6B]"
+          className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 lg:w-14 lg:h-14 flex items-center justify-center text-[#C80103]"
           aria-hidden="true"
         >
           <Icon className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 stroke-[1.6]" />
@@ -86,7 +86,7 @@ const ProcessCard: React.FC<{ step: ProcessStep }> = ({ step }) => {
 
         {/* Right: Text Block (Heading + Description) */}
         <div className="flex-1 min-w-0">
-          <h3 className="font-heading text-lg sm:text-[20px] lg:text-[21px] font-bold text-[#242F6B] tracking-tight leading-snug mb-1 sm:mb-1.5">
+          <h3 className="font-heading text-lg sm:text-[20px] lg:text-[21px] font-bold text-[#040205] tracking-tight leading-snug mb-1 sm:mb-1.5">
             {step.heading}
           </h3>
           <p className="text-xs sm:text-sm lg:text-[14px] text-gray-600 leading-[1.55] font-normal">
@@ -124,16 +124,16 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenQuoteModal }) => {
               ==================================================== */}
           <div className="lg:col-span-5 flex flex-col justify-center">
             {/* Eyebrow */}
-            <span className="text-xs sm:text-[13px] font-heading font-bold text-[#ac0e13] uppercase tracking-widest block mb-2.5 sm:mb-3">
-              GET STARTED WITH KEYSTONE
+            <span className="text-xs sm:text-[13px] font-heading font-bold text-[#C80103] uppercase tracking-widest block mb-2.5 sm:mb-3">
+              GET STARTED WITH A T ROOFING
             </span>
 
             {/* Heading (Constrained width: ~500px–560px, 42px-50px desktop) */}
             <h2
               id="getting-started-heading"
-              className="font-heading text-[30px] xs:text-[34px] sm:text-4xl lg:text-[42px] xl:text-[48px] font-bold text-[#242F6B] tracking-tight leading-[1.1] mb-5 sm:mb-6 max-w-[540px]"
+              className="font-heading text-[30px] xs:text-[34px] sm:text-4xl lg:text-[42px] xl:text-[48px] font-bold text-[#040205] tracking-tight leading-[1.1] mb-5 sm:mb-6 max-w-[540px]"
             >
-              Getting started with Keystone
+              Getting started with A T Roofing
               <br className="hidden sm:inline" /> couldn&apos;t be simpler...
             </h2>
 
@@ -151,10 +151,10 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenQuoteModal }) => {
                 id="how-it-works-contact-btn"
                 type="button"
                 onClick={handleContactClick}
-                className="inline-flex items-center gap-2.5 h-[46px] sm:h-[48px] px-6 sm:px-7 rounded-[10px] bg-white border border-[#242F6B] text-[#242F6B] font-heading font-bold text-sm tracking-wide transition-all duration-200 hover:bg-[#242F6B] hover:text-white shadow-xs hover:shadow-md cursor-pointer group"
+                className="inline-flex items-center gap-2.5 h-[46px] sm:h-[48px] px-6 sm:px-7 rounded-[10px] bg-[#040205] border border-[#040205] text-white font-heading font-bold text-sm tracking-wide transition-all duration-200 hover:bg-[#C80103] hover:border-[#C80103] shadow-xs hover:shadow-md cursor-pointer group"
               >
                 <span>Contact us</span>
-                <ArrowRight className="w-4 h-4 text-[#242F6B] group-hover:text-white group-hover:translate-x-0.5 transition-all" />
+                <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-all" />
               </button>
             </div>
           </div>

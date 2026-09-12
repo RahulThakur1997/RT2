@@ -21,7 +21,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src="/images/uk-roofing-hero.jpg"
-          alt="British residential pitched roof installation in Reading"
+          alt="British residential pitched roof installation in Birmingham"
           className="w-full h-full object-cover object-center scale-102"
           onError={(e) => {
             // Fallback to high-res British slate roof architecture
@@ -29,8 +29,8 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
               'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=85';
           }}
         />
-        {/* Deep Navy/Black overlay for crisp readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#111738]/92 via-[#151D45]/85 to-[#151D45]/75" />
+        {/* Deep Dark overlay for crisp readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#040205]/92 via-[#040205]/85 to-[#1a171d]/75" />
         {/* Subtle architectural grid pattern */}
         <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
@@ -63,7 +63,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
                   </button>
                 </li>
                 <li className="text-gray-400">/</li>
-                <li className="text-[#ac0e13] font-bold">
+                <li className="text-[#C80103] font-bold">
                   NEW ROOF INSTALLATIONS
                 </li>
               </ol>
@@ -76,7 +76,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
 
             {/* Supporting Copy */}
             <p className="text-sm sm:text-base md:text-[17px] text-gray-200/95 leading-relaxed max-w-[620px] font-normal mb-7 sm:mb-8">
-              Professional new roof installations for homes and properties across Reading, Berkshire and surrounding areas.
+              Professional new roof installations for homes and properties across Birmingham, West Midlands and surrounding areas.
             </p>
 
             {/* CTAs */}
@@ -84,7 +84,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
               <button
                 type="button"
                 onClick={onOpenQuoteModal}
-                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-md bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 shadow-md hover:-translate-y-0.5 cursor-pointer flex items-center gap-2"
+                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-md bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase transition-all duration-200 shadow-md hover:-translate-y-0.5 cursor-pointer flex items-center gap-2"
               >
                 <span>Get a Free Quote</span>
                 <ChevronRight className="w-4 h-4" />
@@ -118,7 +118,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
                     />
                   ))}
                 </div>
-                <div className="text-[12px] font-heading font-bold text-[#242F6B] leading-tight">
+                <div className="text-[12px] font-heading font-bold text-[#040205] leading-tight">
                   Google Verified
                 </div>
                 <div className="text-[10.5px] text-gray-500 font-medium">
@@ -141,7 +141,7 @@ export const NewRoofHero: React.FC<NewRoofHeroProps> = ({
                     />
                   ))}
                 </div>
-                <div className="text-[12px] font-heading font-bold text-[#242F6B] leading-tight">
+                <div className="text-[12px] font-heading font-bold text-[#040205] leading-tight">
                   Checkatrade Standard
                 </div>
                 <div className="text-[10.5px] text-gray-500 font-medium">

@@ -104,7 +104,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F5F7FA] text-neutral-900 selection:bg-[#ac0e13] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#F5F7FA] text-neutral-900 selection:bg-[#C80103] selection:text-white">
       {/* Sticky Header */}
       <Header
         onOpenQuoteModal={handleOpenQuoteModal}
@@ -127,7 +127,7 @@ export default function App() {
           onNavigateToNewRoof={() => navigateTo('/new-roof-installations')}
         />
 
-        {/* Why Choose Keystone: Editorial Trust Section & Conversion Card */}
+        {/* Why Choose Us: Editorial Trust Section & Conversion Card */}
         <WhyChooseUs onOpenQuoteModal={handleOpenQuoteModal} />
 
         {/* Recent Roofing Work Portfolio & Lightbox */}

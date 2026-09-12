@@ -53,24 +53,27 @@ export const NEW_ROOF_BENEFITS: BenefitItem[] = [
 ];
 
 export const SERVICE_LOCATIONS: string[] = [
-  'Reading',
-  'Arborfield',
-  'Wokingham',
-  'Woodley',
-  'Earley',
-  'Shinfield',
-  'Caversham',
-  'Tilehurst',
-  'Pangbourne',
-  'Theale',
-  'Twyford',
-  'Sonning',
-  'Bracknell',
-  'Finchampstead',
-  'Warfield',
-  'Maidenhead',
-  'Basingstoke',
-  'Newbury',
+  'Birmingham',
+  'Sutton Coldfield',
+  'Solihull',
+  'Erdington',
+  'Perry Barr',
+  'Kingstanding',
+  'Great Barr',
+  'Handsworth',
+  'Edgbaston',
+  'Harborne',
+  'Moseley',
+  'Kings Heath',
+  'Selly Oak',
+  'Northfield',
+  'Hall Green',
+  'Castle Bromwich',
+  'Walsall',
+  'West Bromwich',
+  'Smethwick',
+  'Dudley',
+  'Tamworth',
   '+ surrounding areas'
 ];
 
@@ -128,7 +131,7 @@ export const NEW_ROOF_FAQS: NewRoofFAQ[] = [
   {
     id: 'how-to-know',
     question: 'How do I know if my roof needs replacing?',
-    answer: 'Common warning signs include daylight visible in the loft, persistent internal ceiling damp, recurring loose or cracked slates, sagging roof lines, deteriorated mortar along the ridge and verges, and heavy moss accumulation trapping moisture against aged tiles. Keystone provides thorough inspections with photographic reports to advise you honestly.'
+    answer: 'Common warning signs include daylight visible in the loft, persistent internal ceiling damp, recurring loose or cracked slates, sagging roof lines, deteriorated mortar along the ridge and verges, and heavy moss accumulation trapping moisture against aged tiles. A T Roofing provides thorough inspections with photographic reports to advise you honestly.'
   },
   {
     id: 'how-long-install',
@@ -143,17 +146,17 @@ export const NEW_ROOF_FAQS: NewRoofFAQ[] = [
   {
     id: 'what-materials',
     question: 'What types of roofing materials can you install?',
-    answer: 'Keystone installs all primary UK roofing materials, including natural slate, interlocking concrete tiles, traditional plain clay tiles, pantiles, fibre-cement slates, and architectural metal roofing. We also integrate dry ridge, dry verge, lead valleys, and new UPVC rainwater systems.'
+    answer: 'A T Roofing installs all primary UK roofing materials, including natural slate, interlocking concrete tiles, traditional plain clay tiles, pantiles, fibre-cement slates, and architectural metal roofing. We also integrate dry ridge, dry verge, lead valleys, and new UPVC rainwater systems.'
   },
   {
     id: 'commercial-properties',
     question: 'Do you provide new roofs for commercial properties?',
-    answer: 'Yes. In addition to private residential homeowners, we regularly install new pitched and flat roofs for commercial premises, residential landlords, property management companies, schools, community buildings, and agricultural conversions across Berkshire.'
+    answer: 'Yes. In addition to private residential homeowners, we regularly install new pitched and flat roofs for commercial premises, residential landlords, property management companies, schools, community buildings, and agricultural conversions across Birmingham and the West Midlands.'
   },
   {
     id: 'cost-new-roof',
     question: 'How much does a new roof cost?',
-    answer: 'The cost of a new roof depends on the property dimensions, pitch, choice of covering (such as concrete tile versus natural Welsh slate), access requirements, scaffolding, and whether timber repairs or chimney works are needed. Keystone provides transparent, fixed-price itemised quotations without any hidden charges or high-pressure sales tactics.'
+    answer: 'The cost of a new roof depends on the property dimensions, pitch, choice of covering (such as concrete tile versus natural Welsh slate), access requirements, scaffolding, and whether timber repairs or chimney works are needed. A T Roofing provides transparent, fixed-price itemised quotations without any hidden charges or high-pressure sales tactics.'
   }
 ];
 
@@ -161,27 +164,27 @@ export const SERVICE_REVIEWS_NEW_ROOF = [
   {
     id: 'rev-nr-1',
     customerName: 'David Morrison',
-    location: 'Caversham, Reading',
+    location: 'Sutton Coldfield, Birmingham',
     timeAgo: '2 months ago',
     rating: 5,
     projectType: 'Full Roof Replacement',
-    review: 'Keystone replaced our entire slate roof following winter storms. The team arrived promptly each morning, worked cleanly, and left the scaffolding area tidy every night. The finished roof looks superb and has stood up brilliantly to heavy rainfall.',
+    review: 'A T Roofing replaced our entire slate roof following winter storms. The team arrived promptly each morning, worked cleanly, and left the scaffolding area tidy every night. The finished roof looks superb and has stood up brilliantly to heavy rainfall.',
     avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
   },
   {
     id: 'rev-nr-2',
     customerName: 'Sarah Jenkins',
-    location: 'Earley, Reading',
+    location: 'Solihull, Birmingham',
     timeAgo: '3 months ago',
     rating: 5,
     projectType: 'Clay Tile New Roof',
-    review: 'From initial quotation to the final tile, Keystone delivered outstanding workmanship. They replaced old battens, installed high-spec breathable membrane, and fitted beautiful clay tiles that matched our 1930s property perfectly.',
+    review: 'From initial quotation to the final tile, A T Roofing delivered outstanding workmanship. They replaced old battens, installed high-spec breathable membrane, and fitted beautiful clay tiles that matched our 1930s property perfectly.',
     avatarUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80'
   },
   {
     id: 'rev-nr-3',
     customerName: 'Mark Butterworth',
-    location: 'Arborfield Cross',
+    location: 'Perry Barr, Birmingham',
     timeAgo: '4 months ago',
     rating: 5,
     projectType: 'Concrete Tile Installation',
@@ -191,11 +194,11 @@ export const SERVICE_REVIEWS_NEW_ROOF = [
   {
     id: 'rev-nr-4',
     customerName: 'Emma & Richard Collins',
-    location: 'Wokingham Area',
+    location: 'Harborne, Birmingham',
     timeAgo: '5 months ago',
     rating: 5,
     projectType: 'Pitched Roof Renewal & Leadwork',
-    review: 'Keystone handled our complete pitched roof renewal including new chimney lead flashings and guttering. Professional, polite, and very respectful of our family home. Would recommend them without hesitation.',
+    review: 'A T Roofing handled our complete pitched roof renewal including new chimney lead flashings and guttering. Professional, polite, and very respectful of our family home. Would recommend them without hesitation.',
     avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
   }
 ];

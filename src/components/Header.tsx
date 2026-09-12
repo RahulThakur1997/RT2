@@ -43,19 +43,19 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
     <>
       {/* ====================================================
           MOBILE ONLY SLIM TOP BAR (Directly above the header)
-          Keystone Red (#AC0D2E) background with white text
+          Primary Red (#C80103) background with white text
           Strictly visible on mobile view only (hidden on md and above)
           ==================================================== */}
       <aside
         id="mobile-slim-top-bar"
         aria-label="Contact notice"
-        className="block md:hidden fixed top-0 left-0 right-0 w-full z-[51] bg-[#AC0D2E] text-white border-b border-white/20 shadow-sm"
+        className="block md:hidden fixed top-0 left-0 right-0 w-full z-[51] bg-[#C80103] text-white border-b border-white/20 shadow-sm"
       >
         <div className="h-[34px] px-3 flex items-center justify-center gap-2.5 text-center">
           <a
             href={BUSINESS_INFO.telLink}
             className="flex items-center justify-center gap-1 text-white active:opacity-85 transition-opacity"
-            title={`Call Keystone Roofing on ${BUSINESS_INFO.phone}`}
+            title={`Call A T Roofing on ${BUSINESS_INFO.phone}`}
           >
             <Phone className="w-3 h-3 text-white fill-white/15 stroke-[2.2]" />
             <span className="font-heading font-medium text-[11px] text-white/95">
@@ -86,14 +86,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
         role="banner"
         className={`fixed left-0 right-0 w-full z-50 transition-all duration-300 ease-in-out border-b border-white/15 shadow-lg top-[34px] md:top-0 ${
           isScrolled
-            ? 'h-[68px] md:h-[72px] lg:h-[74px] bg-[#151D45]/98 backdrop-blur-md shadow-xl'
-            : 'h-[68px] md:h-[76px] xl:h-[155px] bg-[#242F6B]'
+            ? 'h-[68px] md:h-[72px] lg:h-[74px] bg-[#040205]/98 backdrop-blur-md shadow-xl'
+            : 'h-[68px] md:h-[76px] xl:h-[155px] bg-[#040205]'
         }`}
       >
         {/* ====================================================
             BACKGROUND: Shared Sunset Slate Roofing Visual with
             Distinct Header Treatment & Contrast Overlay
-            (One image for both sections, styled as two distinct backgrounds)
             ==================================================== */}
         <div
           className={`absolute inset-0 z-0 overflow-hidden pointer-events-none transition-opacity duration-300 ${
@@ -105,13 +104,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
             src="/images/hero-sunset-slate.png"
             alt=""
             aria-hidden="true"
-            className="w-full h-full object-cover object-top filter brightness-[0.68] contrast-[1.15]"
+            className="w-full h-full object-cover object-top filter brightness-[0.65] contrast-[1.15]"
           />
 
-          {/* Distinct Deep Navy & Slate Grading for Header Section */}
-          <div className="absolute inset-0 bg-[#151D45]/85 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#151D45]/95 via-[#1E2858]/80 to-[#151D45]/92" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-[#151D45]/30 to-[#151D45]/95" />
+          {/* Distinct Deep Black & Slate Grading for Header Section */}
+          <div className="absolute inset-0 bg-[#040205]/88 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#040205]/98 via-[#040205]/85 to-[#040205]/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-[#040205]/40 to-[#040205]/95" />
         </div>
 
         {/* ====================================================
@@ -132,13 +131,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
               ---------------------------------------------------- */}
           <div className="h-[98px] w-full relative">
             <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 h-full flex items-center justify-between relative">
-              {/* LEFT: Keystone Logo Plaque with #f9f9f9 background
+              {/* LEFT: A T Roofing Logo Plaque with #f9f9f9 background
                   Height: 78px, leaving an easily visible 20px gap above the divider line! */}
               <div
                 id="header-logo-plaque"
                 onClick={() => onNavigate('hero')}
                 className="absolute top-0 left-4 sm:left-6 lg:left-8 xl:left-10 w-[275px] h-[78px] bg-[#f9f9f9] rounded-b-[14px] shadow-xl shadow-black/25 border-b border-x border-[#e5e5e5] z-30 flex items-center justify-center px-3.5 py-1.5 cursor-pointer group hover:bg-[#f2f2f2] transition-all duration-200"
-                title="Keystone Roofing & Building Ltd - Home"
+                title="A T Roofing Birmingham - Home"
               >
                 {/* Visual logo mark sized to fit plaque cleanly */}
                 <Logo
@@ -173,13 +172,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
                   id="desktop-phone-link"
                   href={BUSINESS_INFO.telLink}
                   className="flex items-center gap-3.5 text-white transition-all duration-200 hover:-translate-y-0.5 group"
-                  title={`Call Keystone Roofing on ${BUSINESS_INFO.phone}`}
+                  title={`Call A T Roofing on ${BUSINESS_INFO.phone}`}
                 >
-                  <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#AC0E13] border border-white/20 flex items-center justify-center text-white transition-all duration-200 shadow-sm">
+                  <div className="w-10 h-10 rounded-full bg-white/10 group-hover:bg-[#C80103] border border-white/20 flex items-center justify-center text-white transition-all duration-200 shadow-sm">
                     <Phone className="w-4 h-4 text-white" />
                   </div>
                   <div className="flex flex-col text-left leading-tight">
-                    <span className="text-[11px] font-semibold tracking-wider text-blue-100/90 uppercase">
+                    <span className="text-[11px] font-semibold tracking-wider text-red-100 uppercase">
                       TELEPHONE
                     </span>
                     <span className="font-heading font-bold text-[17px] tracking-wide text-white group-hover:text-red-100 transition-colors">
@@ -188,11 +187,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
                   </div>
                 </a>
 
-                {/* Primary CTA: GET A QUOTE (175px × 52px, #AC0E13, rounded-[10px]) */}
+                {/* Primary CTA: GET A QUOTE (175px × 52px, #C80103, rounded-[10px]) */}
                 <button
                   id="desktop-header-quote-cta"
                   onClick={() => onOpenQuoteModal()}
-                  className="w-[175px] h-[52px] rounded-[10px] bg-[#AC0E13] hover:bg-[#920b10] text-white font-heading font-bold text-[14px] tracking-wider uppercase shadow-xl shadow-black/30 border border-white/15 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2 group"
+                  className="w-[175px] h-[52px] rounded-[10px] bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-[14px] tracking-wider uppercase shadow-xl shadow-black/30 border border-white/15 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2 group"
                 >
                   <FileText className="w-4 h-4 text-white group-hover:rotate-6 transition-transform" />
                   <span>Get a Quote</span>
@@ -224,11 +223,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
                   <button
                     key={item.label}
                     onClick={() => onNavigate(item.target, item.category)}
-                    className="py-2 font-heading font-semibold text-[15px] whitespace-nowrap text-white hover:text-[#AC0E13] transition-colors cursor-pointer relative group"
+                    className="py-2 font-heading font-semibold text-[15px] whitespace-nowrap text-white hover:text-[#C80103] transition-colors cursor-pointer relative group"
                   >
                     <span>{item.label}</span>
                     {/* Active/Hover underline indicator */}
-                    <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#AC0E13] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-200" />
+                    <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#C80103] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-200" />
                   </button>
                 ))}
               </nav>
@@ -239,9 +238,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Keystone Roofing & Building Ltd on Instagram"
-                  className="p-2 text-white/80 hover:text-[#AC0E13] transition-colors cursor-pointer hover:scale-110"
-                  title="Follow Keystone Roofing on Instagram"
+                  aria-label="A T Roofing Birmingham on Instagram"
+                  className="p-2 text-white/80 hover:text-[#C80103] transition-colors cursor-pointer hover:scale-110"
+                  title="Follow A T Roofing on Instagram"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
@@ -263,7 +262,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
           <div
             onClick={() => onNavigate('hero')}
             className="cursor-pointer shrink-0 hover:opacity-95 transition-opacity"
-            title="Keystone Roofing & Building Ltd"
+            title="A T Roofing Birmingham"
           >
             <div className="bg-[#f9f9f9] px-2.5 py-1 rounded-lg shadow-sm border border-[#e5e5e5] flex items-center justify-center">
               <Logo variant="light" width="125px" />
@@ -276,7 +275,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
               <button
                 key={item.label}
                 onClick={() => onNavigate(item.target, item.category)}
-                className="py-1 text-[15px] font-heading font-semibold text-white/90 hover:text-[#AC0E13] transition-colors cursor-pointer"
+                className="py-1 text-[15px] font-heading font-semibold text-white/90 hover:text-[#C80103] transition-colors cursor-pointer"
               >
                 {item.label}
               </button>
@@ -288,9 +287,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
             <a
               href={BUSINESS_INFO.telLink}
               className="flex items-center gap-2 text-white hover:text-red-100 transition-colors group"
-              title={`Call Keystone Roofing on ${BUSINESS_INFO.phone}`}
+              title={`Call A T Roofing on ${BUSINESS_INFO.phone}`}
             >
-              <Phone className="w-4 h-4 text-white/90 group-hover:text-[#AC0E13] transition-colors" />
+              <Phone className="w-4 h-4 text-white/90 group-hover:text-[#C80103] transition-colors" />
               <span className="font-heading font-bold text-sm tracking-wide text-white">
                 {BUSINESS_INFO.phone}
               </span>
@@ -298,7 +297,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
 
             <button
               onClick={() => onOpenQuoteModal()}
-              className="h-10 px-5 rounded-lg bg-[#AC0E13] hover:bg-[#920b10] text-white font-heading font-bold text-xs tracking-wider uppercase shadow-md transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center gap-2"
+              className="h-10 px-5 rounded-lg bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-xs tracking-wider uppercase shadow-md transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center gap-2"
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Get a Quote</span>
@@ -316,7 +315,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal, onNavigate }) 
           <div
             onClick={() => onNavigate('hero')}
             className="cursor-pointer shrink-0 active:opacity-90 transition-opacity"
-            title="Keystone Roofing & Building Ltd"
+            title="A T Roofing Birmingham"
           >
             <div className="bg-[#f9f9f9] px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg shadow-sm border border-[#e5e5e5] flex items-center justify-center">
               <Logo variant="light" width="98px" />

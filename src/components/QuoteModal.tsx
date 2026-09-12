@@ -133,14 +133,14 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
     >
       <div
         id="quote-modal-container"
-        className="bg-white rounded-lg shadow-2xl max-w-xl w-full overflow-hidden my-6 relative border-t-4 border-[#ac0e13] animate-in fade-in zoom-in-95 duration-200 text-gray-900"
+        className="bg-white rounded-lg shadow-2xl max-w-xl w-full overflow-hidden my-6 relative border-t-4 border-[#C80103] animate-in fade-in zoom-in-95 duration-200 text-gray-900"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header Bar */}
-        <div className="bg-[#242F6B] text-white p-5 sm:p-6 flex items-center justify-between">
+        <div className="bg-[#040205] text-white p-5 sm:p-6 flex items-center justify-between">
           <div>
             <span className="text-[11px] font-heading font-bold text-[#f87171] uppercase tracking-wider block mb-0.5">
-              Keystone Roofing & Building Ltd
+              A T Roofing Birmingham
             </span>
             <h3 className="font-heading text-lg sm:text-xl font-bold">
               Request Your Free Quotation
@@ -150,7 +150,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             id="quote-modal-close-btn"
             onClick={onClose}
             aria-label="Close quote modal"
-            className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#ac0e13] flex items-center justify-center text-white transition-colors cursor-pointer"
+            className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#C80103] flex items-center justify-center text-white transition-colors cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
@@ -162,23 +162,23 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-2">
               <CheckCircle2 className="w-10 h-10" />
             </div>
-            <h4 className="font-heading text-2xl font-bold text-[#242F6B]">
+            <h4 className="font-heading text-2xl font-bold text-[#040205]">
               Thank You!
             </h4>
             <p className="text-base text-gray-700 leading-relaxed max-w-md mx-auto">
-              Your enquiry has been received. A member of the Keystone team will be in touch.
+              Your enquiry has been received. A member of the A T Roofing team will be in touch.
             </p>
 
-            <div className="p-4 rounded-lg bg-[#EEF1FA] text-xs sm:text-sm text-[#242F6B] text-left max-w-sm mx-auto space-y-1 mt-4">
+            <div className="p-4 rounded-lg bg-[#EEF1FA] text-xs sm:text-sm text-[#040205] text-left max-w-sm mx-auto space-y-1 mt-4">
               <p><strong>Service:</strong> {formData.service}</p>
-              <p><strong>Postcode:</strong> {formData.postcode || 'Reading Area'}</p>
+              <p><strong>Postcode:</strong> {formData.postcode || 'Birmingham Area'}</p>
               <p><strong>Contact:</strong> {formData.name} ({formData.phone})</p>
             </div>
 
             <div className="pt-4">
               <button
                 onClick={handleReset}
-                className="px-6 py-3 rounded-md bg-[#242F6B] hover:bg-[#1b2350] text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
+                className="px-6 py-3 rounded-md bg-[#040205] hover:bg-[#1a171d] text-white font-heading font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer"
               >
                 Close Window
               </button>
@@ -191,7 +191,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             <div className="mb-6">
               <div className="flex items-center justify-between text-xs font-heading font-bold uppercase tracking-wider text-gray-500 mb-2">
                 <span>Step {step} of {totalSteps}</span>
-                <span className="text-[#ac0e13] font-bold">
+                <span className="text-[#C80103] font-bold">
                   {step === 1 && 'Select Service'}
                   {step === 2 && 'Property Information'}
                   {step === 3 && 'Location / Postcode'}
@@ -201,7 +201,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               </div>
               <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-[#ac0e13] transition-all duration-300 ease-out"
+                  className="h-full bg-[#C80103] transition-all duration-300 ease-out"
                   style={{ width: `${(step / totalSteps) * 100}%` }}
                 />
               </div>
@@ -216,7 +216,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             {/* STEP 1: What do you need help with? */}
             {step === 1 && (
               <div className="space-y-3">
-                <h4 className="font-heading text-base font-bold text-[#242F6B] mb-2">
+                <h4 className="font-heading text-base font-bold text-[#040205] mb-2">
                   What do you need help with?
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-[300px] overflow-y-auto pr-1">
@@ -227,7 +227,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       onClick={() => setFormData({ ...formData, service: opt })}
                       className={`p-3 rounded-md text-left text-xs sm:text-sm font-medium border transition-all cursor-pointer ${
                         formData.service === opt
-                          ? 'border-[#242F6B] bg-[#EEF1FA] text-[#242F6B] font-bold shadow-xs'
+                          ? 'border-[#040205] bg-gray-100 text-[#040205] font-bold shadow-xs'
                           : 'border-gray-200 bg-white hover:bg-gray-50 text-gray-700'
                       }`}
                     >
@@ -241,7 +241,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             {/* STEP 2: Property information */}
             {step === 2 && (
               <div className="space-y-3">
-                <h4 className="font-heading text-base font-bold text-[#242F6B] mb-2">
+                <h4 className="font-heading text-base font-bold text-[#040205] mb-2">
                   What type of property is it?
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -252,11 +252,11 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       onClick={() => setFormData({ ...formData, propertyType: prop.label })}
                       className={`p-3.5 rounded-md text-left border transition-all cursor-pointer ${
                         formData.propertyType === prop.label
-                          ? 'border-[#242F6B] bg-[#EEF1FA] text-[#242F6B] shadow-xs'
+                          ? 'border-[#040205] bg-gray-100 text-[#040205] shadow-xs'
                           : 'border-gray-200 bg-white hover:bg-gray-50 text-gray-700'
                       }`}
                     >
-                      <p className="font-heading font-bold text-sm text-[#242F6B]">
+                      <p className="font-heading font-bold text-sm text-[#040205]">
                         {prop.label}
                       </p>
                       <p className="text-xs text-gray-500 mt-0.5">{prop.desc}</p>
@@ -269,11 +269,11 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             {/* STEP 3: Location / Postcode */}
             {step === 3 && (
               <div className="space-y-4">
-                <h4 className="font-heading text-base font-bold text-[#242F6B] mb-1">
+                <h4 className="font-heading text-base font-bold text-[#040205] mb-1">
                   Where is the property located?
                 </h4>
                 <p className="text-xs text-gray-500 mb-2">
-                  We provide roofing services throughout Finchley, London, and surrounding areas.
+                  We provide roofing services throughout Birmingham and surrounding areas.
                 </p>
                 <div>
                   <label htmlFor="modal-postcode-input" className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
@@ -286,12 +286,12 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     onChange={(e) =>
                       setFormData({ ...formData, postcode: e.target.value.toUpperCase() })
                     }
-                    placeholder="e.g. N3 2DN, N2, NW11"
-                    className="w-full px-4 py-3.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-base uppercase font-medium focus:ring-2 focus:ring-[#242F6B] focus:outline-none"
+                    placeholder="e.g. B44 8DX, B1, B72"
+                    className="w-full px-4 py-3.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-base uppercase font-medium focus:ring-2 focus:ring-[#040205] focus:outline-none"
                   />
                 </div>
-                <div className="p-3 rounded bg-[#EEF1FA] text-xs text-[#242F6B] leading-relaxed">
-                  Fast response available for emergency leaks and repair assessments across London and surrounding areas.
+                <div className="p-3 rounded bg-gray-100 text-xs text-[#040205] leading-relaxed">
+                  Fast response available for emergency leaks and repair assessments across Birmingham and surrounding areas.
                 </div>
               </div>
             )}
@@ -299,7 +299,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             {/* STEP 4: When do you need help? */}
             {step === 4 && (
               <div className="space-y-3">
-                <h4 className="font-heading text-base font-bold text-[#242F6B] mb-2">
+                <h4 className="font-heading text-base font-bold text-[#040205] mb-2">
                   When do you need the work completed?
                 </h4>
                 <div className="space-y-2.5">
@@ -310,7 +310,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       onClick={() => setFormData({ ...formData, timeline: t.label })}
                       className={`w-full p-3.5 rounded-md text-left flex items-center justify-between border transition-all cursor-pointer ${
                         formData.timeline === t.label
-                          ? 'border-[#242F6B] bg-[#EEF1FA] text-[#242F6B] font-bold shadow-xs'
+                          ? 'border-[#040205] bg-gray-100 text-[#040205] font-bold shadow-xs'
                           : 'border-gray-200 bg-white hover:bg-gray-50 text-gray-700'
                       }`}
                     >
@@ -327,12 +327,12 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             {/* STEP 5: Contact Details */}
             {step === 5 && (
               <form onSubmit={handleSubmit} className="space-y-3.5">
-                <h4 className="font-heading text-base font-bold text-[#242F6B] mb-1">
+                <h4 className="font-heading text-base font-bold text-[#040205] mb-1">
                   How should we send your quote?
                 </h4>
                 <div>
                   <label htmlFor="modal-name" className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
-                    Your Name <span className="text-[#ac0e13]">*</span>
+                    Your Name <span className="text-[#C80103]">*</span>
                   </label>
                   <input
                     id="modal-name"
@@ -341,13 +341,13 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Full name"
-                    className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#242F6B] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#040205] focus:outline-none"
                   />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label htmlFor="modal-phone" className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
-                      Phone Number <span className="text-[#ac0e13]">*</span>
+                      Phone Number <span className="text-[#C80103]">*</span>
                     </label>
                     <input
                       id="modal-phone"
@@ -355,13 +355,13 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. 07935 250505"
-                      className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#242F6B] focus:outline-none"
+                      placeholder="e.g. 07542 949479"
+                      className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#040205] focus:outline-none"
                     />
                   </div>
                   <div>
                     <label htmlFor="modal-email" className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
-                      Email Address <span className="text-[#ac0e13]">*</span>
+                      Email Address <span className="text-[#C80103]">*</span>
                     </label>
                     <input
                       id="modal-email"
@@ -370,7 +370,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="name@example.co.uk"
-                      className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#242F6B] focus:outline-none"
+                      className="w-full px-3.5 py-2.5 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#040205] focus:outline-none"
                     />
                   </div>
                 </div>
@@ -384,14 +384,14 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                     value={formData.notes}
                     onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                     placeholder="Brief description of roof issue or project requirements..."
-                    className="w-full px-3.5 py-2 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#242F6B] focus:outline-none"
+                    className="w-full px-3.5 py-2 rounded-md bg-[#F5F7FA] border border-gray-300 text-sm focus:ring-2 focus:ring-[#040205] focus:outline-none"
                   />
                 </div>
 
                 <button
                   id="modal-final-submit-btn"
                   type="submit"
-                  className="w-full py-4 px-6 rounded-md bg-[#ac0e13] hover:bg-[#920b10] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer mt-3"
+                  className="w-full py-4 px-6 rounded-md bg-[#C80103] hover:bg-[#a50102] text-white font-heading font-bold text-sm tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer mt-3"
                 >
                   <span>REQUEST MY FREE QUOTE</span>
                   <ArrowRight className="w-4 h-4" />
@@ -418,7 +418,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="px-6 py-3 rounded-md bg-[#242F6B] hover:bg-[#1a2350] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center gap-2 transition-colors cursor-pointer"
+                  className="px-6 py-3 rounded-md bg-[#040205] hover:bg-[#1a171d] text-white font-heading font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center gap-2 transition-colors cursor-pointer"
                 >
                   <span>Next Step</span>
                   <ArrowRight className="w-4 h-4" />
