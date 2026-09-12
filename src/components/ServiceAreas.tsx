@@ -184,7 +184,7 @@ export const ServiceAreas: React.FC<ServiceAreasProps> = ({ onOpenQuoteModal }) 
 
                 {/* Commercial vehicle cutout */}
                 <img
-                  src="/images/keystone-truck-transparent.png?v=clean3"
+                  src="/images/at-roofing-truck.png"
                   alt="A T Roofing Birmingham commercial work vehicle"
                   className="w-full h-auto object-contain relative z-10 filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.45)] transition-transform duration-500 ease-out group-hover:scale-[1.02]"
                   referrerPolicy="no-referrer"
